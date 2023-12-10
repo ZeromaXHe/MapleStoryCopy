@@ -32,7 +32,7 @@ visible = false
 position = Vector2(10, 10)
 texture = ExtResource("2_d5yqf")
 
-[node name="PointingHand" type="AnimatedSprite2D" parent="."]
+[node name="Clickable" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(12, 13)
 sprite_frames = SubResource("SpriteFrames_xt7n1")
@@ -40,3 +40,7 @@ autoplay = "default"
 frame_progress = 0.0709122
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 0.15
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="OnTimerTimeout"]

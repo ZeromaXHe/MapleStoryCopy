@@ -10,4 +10,5 @@ script = ExtResource("1_3o4xe")
 bus = &"Audio"
 
 [connection signal="mouse_entered" from="." to="." method="OnMouseEntered"]
+[connection signal="mouse_exited" from="." to="." method="OnMouseExited"]
 [connection signal="pressed" from="." to="." method="OnPressed"]

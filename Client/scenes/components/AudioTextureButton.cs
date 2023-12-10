@@ -40,9 +40,16 @@ public partial class AudioTextureButton : TextureButton
             GD.PrintErr("_hoverAudio undefined");
             return;
         }
-
+        // 修改光标
+        Cursor.Singleton.Clickable();
         // GD.Print("_hoverAudio play");
         _audioStreamPlayer.Stream = _hoverAudio;
         _audioStreamPlayer.Play();
+    }
+
+    private void OnMouseExited()
+    {
+        // 还原光标
+        Cursor.Singleton.Normal();
     }
 }
