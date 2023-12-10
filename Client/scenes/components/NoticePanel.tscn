@@ -1,0 +1,53 @@
+[gd_scene load_steps=11 format=3 uid="uid://usw64ljj4b2e"]
+
+[ext_resource type="Texture2D" uid="uid://cj1o2t00ul3j2" path="res://assets/UI/Login/Notice/backgrnd.1.png" id="1_6lrvd"]
+[ext_resource type="Script" path="res://scenes/components/NoticePanel.cs" id="1_7gyye"]
+[ext_resource type="Texture2D" uid="uid://c4nkay4x08rju" path="res://assets/UI/Login/Notice/text.3.png" id="2_mgfn1"]
+[ext_resource type="PackedScene" uid="uid://44tsfky7xujk" path="res://scenes/components/AudioTextureButton.tscn" id="3_07t6w"]
+[ext_resource type="Texture2D" uid="uid://bc7kto27eqodw" path="res://assets/UI/Login/Notice/BtYes.normal.0.png" id="4_ffk2j"]
+[ext_resource type="Texture2D" uid="uid://dbh6u0qbmk0t2" path="res://assets/UI/Login/Notice/BtYes.pressed.0.png" id="5_mxw1f"]
+[ext_resource type="Texture2D" uid="uid://0467x36n4y8e" path="res://assets/UI/Login/Notice/BtYes.mouseOver.0.png" id="6_bvio6"]
+[ext_resource type="Texture2D" uid="uid://ce1c765jinrbs" path="res://assets/UI/Login/Notice/BtYes.disabled.0.png" id="7_t2mi3"]
+[ext_resource type="AudioStream" uid="uid://dkocm3s0n1tyk" path="res://assets/Sound/UI/DlgNotice.mp3" id="9_f5wdi"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ai4uy"]
+texture = ExtResource("1_6lrvd")
+
+[node name="NoticeCenter" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+script = ExtResource("1_7gyye")
+
+[node name="NoticePanel" type="Panel" parent="."]
+custom_minimum_size = Vector2(362, 219)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ai4uy")
+
+[node name="Text" type="TextureRect" parent="NoticePanel"]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 19.5
+offset_right = 330.0
+offset_bottom = 128.5
+texture = ExtResource("2_mgfn1")
+
+[node name="YesBtn" parent="NoticePanel" instance=ExtResource("3_07t6w")]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 153.5
+offset_right = 231.0
+offset_bottom = 185.5
+texture_normal = ExtResource("4_ffk2j")
+texture_pressed = ExtResource("5_mxw1f")
+texture_hover = ExtResource("6_bvio6")
+texture_disabled = ExtResource("7_t2mi3")
+
+[node name="NoticeAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_f5wdi")
+bus = &"Audio"
+
+[connection signal="pressed" from="NoticePanel/YesBtn" to="." method="OnYesBtnPressed"]
