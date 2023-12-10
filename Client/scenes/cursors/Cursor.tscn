@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://dt6qefkckc4k1"]
+
+[ext_resource type="Texture2D" uid="uid://dj0bcjp4vql4g" path="res://assets/UI/Basic/Cursor/1.0.png" id="1_gr8gu"]
+[ext_resource type="Script" path="res://scenes/cursors/Cursor.cs" id="1_hlpll"]
+[ext_resource type="Texture2D" uid="uid://c5fww0fh25381" path="res://assets/UI/Basic/Cursor/0.0.png" id="1_lkljp"]
+[ext_resource type="Texture2D" uid="uid://crtg4bxu1h75t" path="res://assets/UI/Basic/Cursor/12.0.png" id="2_d5yqf"]
+[ext_resource type="Texture2D" uid="uid://jdqavjhk8h7m" path="res://assets/UI/Basic/Cursor/1.1.png" id="2_dje2w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xt7n1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gr8gu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dje2w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Cursor" type="Node2D"]
+script = ExtResource("1_hlpll")
+
+[node name="Normal" type="Sprite2D" parent="."]
+position = Vector2(9, 12)
+texture = ExtResource("1_lkljp")
+
+[node name="Clicked" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(10, 10)
+texture = ExtResource("2_d5yqf")
+
+[node name="PointingHand" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(12, 13)
+sprite_frames = SubResource("SpriteFrames_xt7n1")
+autoplay = "default"
+frame_progress = 0.0709122
+
+[node name="Timer" type="Timer" parent="."]

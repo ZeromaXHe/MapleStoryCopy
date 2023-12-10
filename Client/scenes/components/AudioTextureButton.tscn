@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://44tsfky7xujk"]
+
+[ext_resource type="Script" path="res://scenes/components/AudioTextureButton.cs" id="1_3o4xe"]
+
+[node name="AudioTextureButton" type="TextureButton"]
+mouse_default_cursor_shape = 2
+script = ExtResource("1_3o4xe")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Audio"
+
+[connection signal="mouse_entered" from="." to="." method="OnMouseEntered"]
+[connection signal="pressed" from="." to="." method="OnPressed"]

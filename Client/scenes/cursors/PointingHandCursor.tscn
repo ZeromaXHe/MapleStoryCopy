@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://db7h834defi2w"]
+
+[ext_resource type="Texture2D" uid="uid://dj0bcjp4vql4g" path="res://assets/UI/Basic/Cursor/1.0.png" id="1_y1kwc"]
+[ext_resource type="Texture2D" uid="uid://jdqavjhk8h7m" path="res://assets/UI/Basic/Cursor/1.1.png" id="2_dssjw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xt7n1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_y1kwc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dssjw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="PointingHandCursor" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_xt7n1")
+autoplay = "default"
+frame_progress = 0.832252
