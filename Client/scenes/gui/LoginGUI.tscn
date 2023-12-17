@@ -1,0 +1,96 @@
+[gd_scene load_steps=15 format=3 uid="uid://ctywbqkkoxqsg"]
+
+[ext_resource type="Script" path="res://scenes/gui/LoginGUI.cs" id="1_72ai7"]
+[ext_resource type="PackedScene" uid="uid://dls7rhs124lsd" path="res://scenes/login/LoginScene.tscn" id="2_8m24f"]
+[ext_resource type="PackedScene" uid="uid://44tsfky7xujk" path="res://scenes/components/AudioTextureButton.tscn" id="2_hy8eb"]
+[ext_resource type="Texture2D" uid="uid://h7fn2dxomf7e" path="res://assets/UI/Login/Common/BtStart.normal.0.png" id="3_idsef"]
+[ext_resource type="Texture2D" uid="uid://rkrsa51rpwuf" path="res://assets/UI/Login/Common/frame.png" id="3_xvipt"]
+[ext_resource type="Texture2D" uid="uid://c3k2xlx60k6l" path="res://assets/UI/Login/Common/BtStart.pressed.0.png" id="4_7a3if"]
+[ext_resource type="PackedScene" uid="uid://usw64ljj4b2e" path="res://scenes/components/NoticePanel.tscn" id="4_7aif3"]
+[ext_resource type="AudioStream" uid="uid://ctvpbjv7xths2" path="res://assets/Sound/BgmUI/Title.mp3" id="5_6vhgl"]
+[ext_resource type="Texture2D" uid="uid://cw38kdojjq10a" path="res://assets/UI/Login/Common/BtStart.mouseOver.0.png" id="5_vjwnl"]
+[ext_resource type="Texture2D" uid="uid://duicufyimgm13" path="res://assets/UI/Login/Common/BtStart.disabled.0.png" id="6_cupyy"]
+[ext_resource type="PackedScene" uid="uid://dt6qefkckc4k1" path="res://scenes/cursors/Cursor.tscn" id="6_p80ln"]
+[ext_resource type="Texture2D" uid="uid://b7jsfg8gywtsm" path="res://assets/UI/Login/Common/BtStart.keyFocused.0.png" id="7_ypbnd"]
+[ext_resource type="Texture2D" uid="uid://bfkac83dmmqao" path="res://assets/UI/Login/Common/step.1.png" id="8_8lje5"]
+[ext_resource type="Texture2D" uid="uid://ce0eal0jrajso" path="res://assets/UI/Login/Common/selectWorld.png" id="9_ipdnr"]
+
+[node name="LoginGUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_72ai7")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+metadata/_edit_lock_ = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1280, 720)
+render_target_update_mode = 4
+
+[node name="LoginScene" parent="SubViewportContainer/SubViewport" instance=ExtResource("2_8m24f")]
+
+[node name="Frame" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("3_xvipt")
+metadata/_edit_lock_ = true
+
+[node name="BackBtn" parent="Frame" instance=ExtResource("2_hy8eb")]
+visible = false
+layout_mode = 0
+offset_left = 12.0
+offset_top = 470.0
+offset_right = 136.0
+offset_bottom = 521.0
+texture_normal = ExtResource("3_idsef")
+texture_pressed = ExtResource("4_7a3if")
+texture_hover = ExtResource("5_vjwnl")
+texture_disabled = ExtResource("6_cupyy")
+texture_focused = ExtResource("7_ypbnd")
+metadata/_edit_lock_ = true
+
+[node name="Step" type="TextureRect" parent="Frame"]
+visible = false
+layout_mode = 0
+offset_top = 40.0
+offset_right = 150.0
+offset_bottom = 97.0
+texture = ExtResource("8_8lje5")
+metadata/_edit_lock_ = true
+
+[node name="SelectedWorld" type="TextureRect" parent="Frame"]
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = 102.0
+offset_right = 151.0
+offset_bottom = 159.0
+texture = ExtResource("9_ipdnr")
+
+[node name="NoticeCenter" parent="." instance=ExtResource("4_7aif3")]
+visible = false
+layout_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_6vhgl")
+autoplay = true
+bus = &"BGM"
+
+[node name="Cursor" parent="." instance=ExtResource("6_p80ln")]
+
+[connection signal="pressed" from="Frame/BackBtn" to="." method="OnBackBtnPressed"]

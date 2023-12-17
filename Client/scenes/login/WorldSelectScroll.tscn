@@ -1,0 +1,238 @@
+[gd_scene load_steps=34 format=3 uid="uid://cugw82hxudfbk"]
+
+[ext_resource type="Texture2D" uid="uid://bg1pisby1wmes" path="res://assets/UI/Login/WorldSelect/scroll.0.3.png" id="1_yyu7x"]
+[ext_resource type="Texture2D" uid="uid://xyu3r17nygna" path="res://assets/UI/Login/WorldSelect/scroll.0.1.png" id="2_mbg35"]
+[ext_resource type="Texture2D" uid="uid://bosqdulqe0oub" path="res://assets/UI/Login/WorldSelect/scroll.0.2.png" id="3_vyaqu"]
+[ext_resource type="Texture2D" uid="uid://bi1rwffq1d180" path="res://assets/UI/Login/WorldSelect/scroll.0.0.png" id="4_vn3ep"]
+[ext_resource type="Script" path="res://scenes/login/WorldSelectScroll.cs" id="5_hwn3w"]
+[ext_resource type="Texture2D" uid="uid://rpbame0jo63r" path="res://assets/UI/Login/WorldSelect/chBackgrn.png" id="6_et6oo"]
+[ext_resource type="Texture2D" uid="uid://sso0qvoqv667" path="res://assets/UI/Login/WorldSelect/world.0.png" id="7_aaf0a"]
+[ext_resource type="Texture2D" uid="uid://dqmrcu0wy3fot" path="res://assets/UI/Login/WorldSelect/channel.0.normal.png" id="8_h37gm"]
+[ext_resource type="Texture2D" uid="uid://dp4e1qxq7wi2o" path="res://assets/UI/Login/WorldSelect/channel.chgauge.png" id="9_qlayv"]
+[ext_resource type="Texture2D" uid="uid://brlik25u2ympr" path="res://assets/UI/Login/WorldSelect/channel.1.normal.png" id="10_2gtsr"]
+[ext_resource type="Texture2D" uid="uid://ce2e02ygqhmvg" path="res://assets/UI/Login/WorldSelect/channel.2.normal.png" id="11_kd7mo"]
+[ext_resource type="Texture2D" uid="uid://d11ydup0720dv" path="res://assets/UI/Login/WorldSelect/channel.3.normal.png" id="12_noukh"]
+[ext_resource type="Texture2D" uid="uid://b78khya6ni2h0" path="res://assets/UI/Login/WorldSelect/channel.4.normal.png" id="13_48rl1"]
+[ext_resource type="Texture2D" uid="uid://d3v3qkuiwjetj" path="res://assets/UI/Login/WorldSelect/channel.5.disabled.png" id="14_bsx82"]
+[ext_resource type="Texture2D" uid="uid://ccc3l86hrjs6w" path="res://assets/UI/Login/WorldSelect/channel.6.disabled.png" id="15_bn0lq"]
+[ext_resource type="Texture2D" uid="uid://bqkfcf4h5q2h6" path="res://assets/UI/Login/WorldSelect/channel.7.disabled.png" id="16_3bcc3"]
+[ext_resource type="Texture2D" uid="uid://u1i3ipaa6icq" path="res://assets/UI/Login/WorldSelect/channel.8.disabled.png" id="17_ky0l7"]
+[ext_resource type="Texture2D" uid="uid://dfufyyjdwpopd" path="res://assets/UI/Login/WorldSelect/channel.9.disabled.png" id="18_jbp0e"]
+[ext_resource type="Texture2D" uid="uid://bxx4s7xv3dhgc" path="res://assets/UI/Login/WorldSelect/channel.10.disabled.png" id="19_xty7o"]
+[ext_resource type="Texture2D" uid="uid://cvxe4hfr5fuc6" path="res://assets/UI/Login/WorldSelect/channel.11.disabled.png" id="20_4t1a4"]
+[ext_resource type="Texture2D" uid="uid://dfjsrbd5uacek" path="res://assets/UI/Login/WorldSelect/channel.12.disabled.png" id="21_01qcy"]
+[ext_resource type="Texture2D" uid="uid://cntrhby4e0hhd" path="res://assets/UI/Login/WorldSelect/channel.13.disabled.png" id="22_d07gy"]
+[ext_resource type="Texture2D" uid="uid://cs2lccb6rx468" path="res://assets/UI/Login/WorldSelect/channel.14.disabled.png" id="23_es8a1"]
+[ext_resource type="Texture2D" uid="uid://o4lqyp84nn23" path="res://assets/UI/Login/WorldSelect/channel.15.disabled.png" id="24_waq53"]
+[ext_resource type="Texture2D" uid="uid://kvnwnqqmvda3" path="res://assets/UI/Login/WorldSelect/channel.16.disabled.png" id="25_abku5"]
+[ext_resource type="Texture2D" uid="uid://csv8f0a8a5wyt" path="res://assets/UI/Login/WorldSelect/channel.17.disabled.png" id="26_aw42f"]
+[ext_resource type="Texture2D" uid="uid://bmgk4x2hkw8ik" path="res://assets/UI/Login/WorldSelect/channel.18.disabled.png" id="27_rk6i5"]
+[ext_resource type="Texture2D" uid="uid://1fx6vkadnnet" path="res://assets/UI/Login/WorldSelect/channel.19.disabled.png" id="28_qchib"]
+[ext_resource type="PackedScene" uid="uid://44tsfky7xujk" path="res://scenes/components/AudioTextureButton.tscn" id="29_vxjhn"]
+[ext_resource type="Texture2D" uid="uid://dhmer8hm4ojp0" path="res://assets/UI/Login/WorldSelect/BtGoworld.normal.0.png" id="30_oqgus"]
+[ext_resource type="Texture2D" uid="uid://dryy1ko4s0nqs" path="res://assets/UI/Login/WorldSelect/BtGoworld.pressed.0.png" id="31_2n3vp"]
+[ext_resource type="Texture2D" uid="uid://b4qy61hmqloxx" path="res://assets/UI/Login/WorldSelect/BtGoworld.mouseOver.0.png" id="32_bgi0u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y8s3k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yyu7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mbg35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vyaqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vn3ep")
+}],
+"loop": false,
+"name": &"close",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_vn3ep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mbg35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vyaqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_yyu7x")
+}],
+"loop": false,
+"name": &"open",
+"speed": 5.0
+}]
+
+[node name="WorldSelectScroll" type="AnimatedSprite2D"]
+position = Vector2(440, -437)
+sprite_frames = SubResource("SpriteFrames_y8s3k")
+animation = &"open"
+frame = 3
+frame_progress = 1.0
+centered = false
+script = ExtResource("5_hwn3w")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(262, 262)
+texture = ExtResource("6_et6oo")
+metadata/_edit_lock_ = true
+
+[node name="WorldTitle" type="Sprite2D" parent="."]
+position = Vector2(132, 168)
+texture = ExtResource("7_aaf0a")
+metadata/_edit_lock_ = true
+
+[node name="ChannelGrid" type="GridContainer" parent="."]
+offset_left = 78.0
+offset_top = 200.0
+offset_right = 458.0
+offset_bottom = 366.0
+theme_override_constants/h_separation = 1
+theme_override_constants/v_separation = 1
+columns = 4
+metadata/_edit_lock_ = true
+
+[node name="Channel1" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("8_h37gm")
+
+[node name="Gauge" type="TextureRect" parent="ChannelGrid/Channel1"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 17.0
+offset_right = 80.0
+offset_bottom = 26.0
+texture = ExtResource("9_qlayv")
+metadata/_edit_lock_ = true
+
+[node name="Channel2" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("10_2gtsr")
+
+[node name="Gauge" type="TextureRect" parent="ChannelGrid/Channel2"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 17.0
+offset_right = 80.0
+offset_bottom = 26.0
+texture = ExtResource("9_qlayv")
+metadata/_edit_lock_ = true
+
+[node name="Channel3" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("11_kd7mo")
+
+[node name="Gauge" type="TextureRect" parent="ChannelGrid/Channel3"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 17.0
+offset_right = 80.0
+offset_bottom = 26.0
+texture = ExtResource("9_qlayv")
+metadata/_edit_lock_ = true
+
+[node name="Channel4" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("12_noukh")
+
+[node name="Gauge" type="TextureRect" parent="ChannelGrid/Channel4"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 17.0
+offset_right = 80.0
+offset_bottom = 26.0
+texture = ExtResource("9_qlayv")
+metadata/_edit_lock_ = true
+
+[node name="Channel5" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("13_48rl1")
+
+[node name="Gauge" type="TextureRect" parent="ChannelGrid/Channel5"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 17.0
+offset_right = 80.0
+offset_bottom = 26.0
+texture = ExtResource("9_qlayv")
+metadata/_edit_lock_ = true
+
+[node name="Channel6" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("14_bsx82")
+
+[node name="Channel7" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("15_bn0lq")
+
+[node name="Channel8" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("16_3bcc3")
+
+[node name="Channel9" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("17_ky0l7")
+
+[node name="Channel10" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("18_jbp0e")
+
+[node name="Channel11" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("19_xty7o")
+
+[node name="Channel12" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("20_4t1a4")
+
+[node name="Channel13" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("21_01qcy")
+
+[node name="Channel14" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("22_d07gy")
+
+[node name="Channel15" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("23_es8a1")
+
+[node name="Channel16" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("24_waq53")
+
+[node name="Channel17" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("25_abku5")
+
+[node name="Channel18" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("26_aw42f")
+
+[node name="Channel19" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("27_rk6i5")
+
+[node name="Channel20" type="TextureButton" parent="ChannelGrid"]
+layout_mode = 2
+texture_normal = ExtResource("28_qchib")
+
+[node name="GoToBtn" parent="." instance=ExtResource("29_vxjhn")]
+offset_left = 357.0
+offset_top = 344.0
+offset_right = 497.0
+offset_bottom = 385.0
+texture_normal = ExtResource("30_oqgus")
+texture_pressed = ExtResource("31_2n3vp")
+texture_hover = ExtResource("32_bgi0u")
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="GoToBtn" to="." method="OnGoToBtnPressed"]

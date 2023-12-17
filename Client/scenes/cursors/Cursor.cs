@@ -3,16 +3,16 @@ using System;
 
 public partial class Cursor : Node2D
 {
-    enum CursorStatus
+    private enum CursorStatus
     {
-        NORMAL,
-        CLICKED,
-        CLICKABLE,
+        Normal,
+        Clicked,
+        Clickable,
     }
 
-    public static Cursor Singleton;
+    public static Cursor Singleton { get; private set; }
 
-    private CursorStatus _status = CursorStatus.NORMAL;
+    private CursorStatus _status = CursorStatus.Normal;
     private CursorStatus _clickPreStatus;
 
     // @onready
@@ -39,7 +39,7 @@ public partial class Cursor : Node2D
 
     public void Normal()
     {
-        _status = CursorStatus.NORMAL;
+        _status = CursorStatus.Normal;
         HideAll();
         _normal.Show();
     }
@@ -47,7 +47,7 @@ public partial class Cursor : Node2D
     public void Clicked()
     {
         _clickPreStatus = _status;
-        _status = CursorStatus.CLICKED;
+        _status = CursorStatus.Clicked;
         HideAll();
         _clicked.Show();
         _timer.Start();
@@ -55,7 +55,7 @@ public partial class Cursor : Node2D
 
     public void Clickable()
     {
-        _status = CursorStatus.CLICKABLE;
+        _status = CursorStatus.Clickable;
         HideAll();
         _clickable.Show();
     }
@@ -74,12 +74,16 @@ public partial class Cursor : Node2D
         // 点击计时器到期，则还原光标
         switch (_clickPreStatus)
         {
-            case CursorStatus.NORMAL:
+            case CursorStatus.Normal:
                 Normal();
                 break;
-            case CursorStatus.CLICKABLE:
+            case CursorStatus.Clickable:
                 Clickable();
                 break;
+            case CursorStatus.Clicked:
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
     }
 }
