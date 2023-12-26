@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbsh0k3j36nq6"]
+
+[ext_resource type="Script" path="res://scenes/components/ParallaxLayerAdapter.cs" id="1_oo2jw"]
+
+[node name="ParallaxLayerAdapter" type="ParallaxLayer"]
+script = ExtResource("1_oo2jw")

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdd7b8x42al3b"]
+
+[ext_resource type="Texture2D" uid="uid://dy87lu6jfo8kd" path="res://assets/Map/Obj/acc1/grassySoil/nature.9.0.png" id="1_qc0aq"]
+
+[node name="ObjAcc1GrassySoilNature9" type="Sprite2D"]
+texture = ExtResource("1_qc0aq")
+offset = Vector2(0, 0.5)
+metadata/_edit_lock_ = true

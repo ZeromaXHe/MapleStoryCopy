@@ -1,0 +1,1870 @@
+[gd_scene load_steps=76 format=3 uid="uid://bbja30ux78c3i"]
+
+[ext_resource type="AudioStream" uid="uid://fu58b83n83fc" path="res://assets/Sound/Bgm00/FloralLife.mp3" id="1_ahcwn"]
+[ext_resource type="Texture2D" uid="uid://drxshbypjmn31" path="res://assets/Map/Back/grassySoil/back.0.png" id="2_4y32x"]
+[ext_resource type="PackedScene" uid="uid://cbsh0k3j36nq6" path="res://scenes/components/ParallaxLayerAdapter.tscn" id="2_vhhe3"]
+[ext_resource type="Texture2D" uid="uid://cw5bofnh2a7on" path="res://assets/Map/Back/grassySoil/back.1.png" id="3_lms26"]
+[ext_resource type="Texture2D" uid="uid://blad5yd7b53bh" path="res://assets/Map/Back/grassySoil/back.2.png" id="5_v3icg"]
+[ext_resource type="Texture2D" uid="uid://dby2e0oov1w3f" path="res://assets/Map/Back/grassySoil/back.3.png" id="6_jhuei"]
+[ext_resource type="Texture2D" uid="uid://dje87ox0aga2q" path="res://assets/Map/Back/grassySoil/back.5.png" id="7_o8rb4"]
+[ext_resource type="Texture2D" uid="uid://bnxes6j8p361v" path="res://assets/Map/Back/grassySoil/back.6.png" id="8_fn0df"]
+[ext_resource type="Texture2D" uid="uid://cn3lsx8c5cx21" path="res://assets/Npc/0002100/stand.0.png" id="9_1cn1i"]
+[ext_resource type="Texture2D" uid="uid://cydt5b0oof4gb" path="res://assets/Npc/0002101/stand.0.png" id="10_ghnt0"]
+[ext_resource type="Texture2D" uid="uid://c1h0svcpe07ow" path="res://assets/Npc/0002101/stand.1.png" id="11_xghun"]
+[ext_resource type="Texture2D" uid="uid://4idf5krnub8" path="res://assets/Npc/0002101/stand.2.png" id="12_uh3mr"]
+[ext_resource type="Texture2D" uid="uid://iylhlin5un3i" path="res://assets/Npc/0002007/info.default.png" id="13_bmq1u"]
+[ext_resource type="PackedScene" uid="uid://bx3b3xwb1imhm" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_Bsc_0.tscn" id="14_yafdm"]
+[ext_resource type="PackedScene" uid="uid://cgnv7cpb6pph4" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_Bsc_4.tscn" id="15_nxdws"]
+[ext_resource type="PackedScene" uid="uid://enjldvistlip" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_Bsc_1.tscn" id="16_aoidl"]
+[ext_resource type="PackedScene" uid="uid://bmv1oaos6irpt" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_Bsc_3.tscn" id="17_cdcsp"]
+[ext_resource type="PackedScene" uid="uid://pof1erfdjlnk" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_Bsc_2.tscn" id="18_32qtd"]
+[ext_resource type="PackedScene" uid="uid://b4oalh84apj5k" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_EnH0_1.tscn" id="19_0mkkj"]
+[ext_resource type="PackedScene" uid="uid://cvfqkgggpgic" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_EnV0_0.tscn" id="19_u6p4e"]
+[ext_resource type="PackedScene" uid="uid://bo84jnjahap5a" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_EnV0_1.tscn" id="20_f4d03"]
+[ext_resource type="PackedScene" uid="uid://dx42ktejecmim" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_EnH0_0.tscn" id="21_thk4r"]
+[ext_resource type="PackedScene" uid="uid://cy1mkt7hnhmjg" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_EdU_0.tscn" id="22_3ppx2"]
+[ext_resource type="PackedScene" uid="uid://kaqvl2mgxcta" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_EnH1_1.tscn" id="24_k1t11"]
+[ext_resource type="PackedScene" uid="uid://biqfijfhxecuw" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_EdD_0.tscn" id="25_qfml7"]
+[ext_resource type="PackedScene" uid="uid://6jwevnpsoxqg" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_EnH1_0.tscn" id="26_1gslc"]
+[ext_resource type="Texture2D" uid="uid://ivbdt1iwucra" path="res://assets/Map/Obj/acc1/grassySoil/nature.20.0.png" id="27_ogkjc"]
+[ext_resource type="PackedScene" uid="uid://24ekabtsldec" path="res://scenes/map/obj/acc1/grassySoil/Obj_Acc1_GrassySoil_Artificiality_18.tscn" id="27_wr57n"]
+[ext_resource type="Texture2D" uid="uid://bs1q2ft5xtwco" path="res://assets/Map/Obj/acc1/grassySoil/nature.20.1.png" id="28_ljgye"]
+[ext_resource type="Texture2D" uid="uid://cwfuxhyosu1et" path="res://assets/Map/Obj/acc1/grassySoil/artificiality.19.0.png" id="28_lw5wo"]
+[ext_resource type="Texture2D" uid="uid://v1xd0l4go464" path="res://assets/Map/Obj/acc1/grassySoil/nature.20.2.png" id="29_mcu4f"]
+[ext_resource type="Texture2D" uid="uid://bcpgmt7ddfe5y" path="res://assets/Map/Obj/acc1/grassySoil/artificiality.20.0.png" id="29_rf2ls"]
+[ext_resource type="Texture2D" uid="uid://dkluii06vao06" path="res://assets/Map/Obj/acc1/grassySoil/nature.0.0.png" id="30_fca5o"]
+[ext_resource type="Texture2D" uid="uid://b3r6aieaukbiv" path="res://assets/Map/Obj/acc1/grassySoil/nature.20.3.png" id="30_p103v"]
+[ext_resource type="PackedScene" uid="uid://i4enxuxsobdn" path="res://scenes/map/obj/connect/Obj_Connect_Ladder_0_0.tscn" id="35_tvsfa"]
+[ext_resource type="PackedScene" uid="uid://ngnwlj4ovx6b" path="res://scenes/map/obj/connect/Obj_Connect_Ladder_0_1.tscn" id="36_5wl7l"]
+[ext_resource type="PackedScene" uid="uid://cg2627hpgf4k3" path="res://scenes/map/obj/connect/Obj_Connect_Ladder_0_2.tscn" id="37_vlh0r"]
+[ext_resource type="PackedScene" uid="uid://b8on0kxsvyblp" path="res://scenes/map/obj/connect/Obj_Connect_Ladder_0_3.tscn" id="38_61w52"]
+[ext_resource type="Texture2D" uid="uid://7t4fdj7vjodo" path="res://assets/Map/Obj/guide/tutorial/key.1.0.png" id="39_cacuf"]
+[ext_resource type="Texture2D" uid="uid://crgjrs5qtwtj0" path="res://assets/Map/Obj/guide/tutorial/key.1.1.png" id="40_42ans"]
+[ext_resource type="Texture2D" uid="uid://cy0563s5w431a" path="res://assets/Map/Obj/guide/tutorial/key.1.2.png" id="41_lqeyn"]
+[ext_resource type="Texture2D" uid="uid://bgsjm7bjuw4yk" path="res://assets/Map/Obj/guide/tutorial/key.1.3.png" id="42_2qnah"]
+[ext_resource type="Texture2D" uid="uid://cpqrlot3bk8kq" path="res://assets/Map/Obj/guide/tutorial/key.1.4.png" id="43_jgrv7"]
+[ext_resource type="Texture2D" uid="uid://cs1hkceqm6nha" path="res://assets/Map/Obj/guide/tutorial/key.1.5.png" id="44_fyg21"]
+[ext_resource type="PackedScene" uid="uid://cg1oriwawybvf" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_EdU_1.tscn" id="45_dp6q5"]
+[ext_resource type="PackedScene" uid="uid://dbpmjvohup2w4" path="res://scenes/map/tile/grassySoil/Tile_GrassySoil_EnV1_0.tscn" id="46_7upq1"]
+[ext_resource type="PackedScene" uid="uid://csmaktjdamjrl" path="res://scenes/map/obj/acc1/grassySoil/Obj_Acc1_GrassySoil_Nature_18.tscn" id="47_dle0s"]
+[ext_resource type="PackedScene" uid="uid://dqn800nl67f0y" path="res://scenes/map/obj/acc1/grassySoil/Obj_Acc1_GrassySoil_Nature_14.tscn" id="48_o1fnh"]
+[ext_resource type="PackedScene" uid="uid://cedr0lurs055s" path="res://scenes/map/obj/acc1/darkWood/Obj_Acc1_DarkWood_Nature_9.tscn" id="49_nima4"]
+[ext_resource type="PackedScene" uid="uid://dplo2janr6qew" path="res://scenes/map/obj/acc1/grassySoil/Obj_Acc1_GrassySoil_Nature_13.tscn" id="50_prspb"]
+[ext_resource type="PackedScene" uid="uid://b406of3u0hk51" path="res://scenes/map/obj/guide/maple/Obj_Guide_Maple_StartPoint_0.tscn" id="51_3wxru"]
+[ext_resource type="PackedScene" uid="uid://casgkugsosnbv" path="res://scenes/map/obj/guide/maple/Obj_Guide_Maple_StartPoint_1.tscn" id="52_yug4y"]
+[ext_resource type="PackedScene" uid="uid://7aeosci4gxoj" path="res://scenes/map/obj/guide/tutorial/Obj_Guide_Tutorial_Key_0.tscn" id="53_ij4xg"]
+[ext_resource type="PackedScene" uid="uid://dmkb6xk63nacf" path="res://scenes/map/obj/guide/tutorial/Obj_Guide_Tutorial_Key_3.tscn" id="54_6e41o"]
+[ext_resource type="PackedScene" uid="uid://dyvhy2sbbde4s" path="res://scenes/map/obj/acc1/grassySoil/Obj_Acc1_GrassySoil_Nature_17.tscn" id="55_hk4uo"]
+[ext_resource type="PackedScene" uid="uid://ekv2k3tfw44v" path="res://scenes/map/obj/guide/tutorial/Obj_Guide_Tutorial_Key_5.tscn" id="56_has3l"]
+[ext_resource type="PackedScene" uid="uid://kcdjyafwa8pw" path="res://scenes/map/obj/guide/tutorial/Obj_Guide_Tutorial_Key_2.tscn" id="57_mq75e"]
+[ext_resource type="PackedScene" uid="uid://b2irpdalyqxp0" path="res://scenes/map/obj/guide/tutorial/Obj_Guide_Tutorial_Key_4.tscn" id="58_g08kl"]
+[ext_resource type="PackedScene" uid="uid://b6iucom3sfkfb" path="res://scenes/player/Player.tscn" id="59_1ne2p"]
+[ext_resource type="Shape2D" uid="uid://bjhjd3t8glw3t" path="res://tres/collisionShape/Map_Foothold_SegmentShape_60.tres" id="59_rnbju"]
+[ext_resource type="Shape2D" uid="uid://dy4krxx5cfjng" path="res://tres/collisionShape/Map_Foothold_SegmentShape_90.tres" id="60_h4bxo"]
+[ext_resource type="Shape2D" uid="uid://bjcdau6vliq4n" path="res://tres/collisionShape/Map_Foothold_SegmentShape_39.tres" id="61_tli6d"]
+[ext_resource type="Shape2D" uid="uid://buk32sgprh87r" path="res://tres/collisionShape/Map_Foothold_SegmentShape_25.tres" id="62_7gkbm"]
+[ext_resource type="Shape2D" uid="uid://djqbh4ltv3mhs" path="res://tres/collisionShape/Map_Foothold_SegmentShape_51.tres" id="63_fqjsq"]
+[ext_resource type="Shape2D" uid="uid://opqswf777db5" path="res://tres/collisionShape/Map_Foothold_RectangleShape_26_4.tres" id="64_5npig"]
+[ext_resource type="Shape2D" uid="uid://cw1h3ful1ldjq" path="res://tres/collisionShape/Map_Foothold_RectangleShape_87_2.tres" id="65_7u814"]
+[ext_resource type="Shape2D" uid="uid://bqeet51g8xvlt" path="res://tres/collisionShape/Map_Foothold_SegmentShape_78.tres" id="66_sbb3q"]
+[ext_resource type="Shape2D" uid="uid://38eo0sd5t872" path="res://tres/collisionShape/Map_Foothold_SegmentShape_12.tres" id="67_mobem"]
+[ext_resource type="Shape2D" uid="uid://rbu2e6xw8l0u" path="res://tres/collisionShape/Map_Foothold_SegmentShape_35.tres" id="68_2phsx"]
+[ext_resource type="Shape2D" uid="uid://b1t8nji0gyuvf" path="res://tres/collisionShape/Map_Foothold_SegmentShape_100.tres" id="69_rdsi1"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_c0tss"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_naphx"]
+animations = [{
+"frames": [{
+"duration": 30.0,
+"texture": ExtResource("10_ghnt0")
+}, {
+"duration": 2.0,
+"texture": ExtResource("11_xghun")
+}, {
+"duration": 3.0,
+"texture": ExtResource("12_uh3mr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ma8s7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_ogkjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ljgye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_mcu4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_p103v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_mcu4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ljgye")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_awdlq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_cacuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_42ans")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_lqeyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_2qnah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_jgrv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_fyg21")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_gdwqm"]
+b = Vector2(0, 236)
+
+[node name="Map000010000" type="Node2D"]
+
+[node name="Info" type="Node2D" parent="."]
+
+[node name="BGM" type="AudioStreamPlayer" parent="Info"]
+stream = ExtResource("1_ahcwn")
+autoplay = true
+bus = &"BGM"
+
+[node name="VRLeft" type="StaticBody2D" parent="Info"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Info/VRLeft"]
+position = Vector2(-315, 0)
+rotation = 1.5708
+shape = SubResource("WorldBoundaryShape2D_c0tss")
+
+[node name="VRTop" type="StaticBody2D" parent="Info"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Info/VRTop"]
+position = Vector2(0, -480)
+rotation = 3.14159
+shape = SubResource("WorldBoundaryShape2D_c0tss")
+
+[node name="VRBottom" type="StaticBody2D" parent="Info"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Info/VRBottom"]
+position = Vector2(0, 750)
+shape = SubResource("WorldBoundaryShape2D_c0tss")
+
+[node name="VRRight" type="StaticBody2D" parent="Info"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Info/VRRight"]
+position = Vector2(1390, 0)
+rotation = -1.5708
+shape = SubResource("WorldBoundaryShape2D_c0tss")
+
+[node name="Back" type="ParallaxBackground" parent="."]
+offset = Vector2(537.5, 135)
+transform = Transform2D(1, 0, 0, 1, 537.5, 135)
+
+[node name="ParallaxLayerAdapter0" parent="Back" instance=ExtResource("2_vhhe3")]
+modulate = Color(1, 1, 1, 0.376471)
+motion_mirroring = Vector2(256, 256)
+Type = 3
+A = 96
+
+[node name="Blue" type="Sprite2D" parent="Back/ParallaxLayerAdapter0"]
+scale = Vector2(5, 5)
+texture = ExtResource("2_4y32x")
+metadata/_edit_lock_ = true
+
+[node name="ParallaxLayerAdapter1" parent="Back" instance=ExtResource("2_vhhe3")]
+position = Vector2(100, -203)
+motion_scale = Vector2(0.333, 0.2)
+motion_offset = Vector2(-130.067, 0)
+motion_mirroring = Vector2(1024, 0)
+Type = 4
+Rx = -5
+Ry = -3
+
+[node name="Cloud" type="Sprite2D" parent="Back/ParallaxLayerAdapter1"]
+texture = ExtResource("3_lms26")
+metadata/_edit_lock_ = true
+
+[node name="ParallaxLayerAdapter2" parent="Back" instance=ExtResource("2_vhhe3")]
+position = Vector2(300, 55)
+motion_scale = Vector2(0.533, 0.533)
+Rx = -8
+Ry = -8
+
+[node name="Hill" type="Sprite2D" parent="Back/ParallaxLayerAdapter2"]
+texture = ExtResource("5_v3icg")
+metadata/_edit_lock_ = true
+
+[node name="Tree" type="Sprite2D" parent="Back/ParallaxLayerAdapter2"]
+position = Vector2(-121, -304)
+texture = ExtResource("6_jhuei")
+metadata/_edit_lock_ = true
+
+[node name="ParallaxLayerAdapter4" parent="Back" instance=ExtResource("2_vhhe3")]
+position = Vector2(-400, 218)
+motion_scale = Vector2(1, 0.8)
+Rx = -15
+Ry = -12
+
+[node name="Valley" type="Sprite2D" parent="Back/ParallaxLayerAdapter4"]
+texture = ExtResource("7_o8rb4")
+metadata/_edit_lock_ = true
+
+[node name="Valley2" type="Sprite2D" parent="Back/ParallaxLayerAdapter4"]
+position = Vector2(1024, -18)
+texture = ExtResource("8_fn0df")
+metadata/_edit_lock_ = true
+
+[node name="Life" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="0002100" type="Sprite2D" parent="Life"]
+position = Vector2(833, 125)
+texture = ExtResource("9_1cn1i")
+offset = Vector2(0, -33.5)
+metadata/_edit_lock_ = true
+
+[node name="0002101" type="AnimatedSprite2D" parent="Life"]
+position = Vector2(130, 293)
+sprite_frames = SubResource("SpriteFrames_naphx")
+autoplay = "default"
+frame_progress = 0.89668
+offset = Vector2(1, -27.5)
+flip_h = true
+metadata/_edit_lock_ = true
+
+[node name="0002007" type="Sprite2D" parent="Life"]
+visible = false
+position = Vector2(1394, 121)
+texture = ExtResource("13_bmq1u")
+offset = Vector2(0, -34.5)
+metadata/_edit_lock_ = true
+
+[node name="0" type="Node2D" parent="."]
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Tile" type="Node2D" parent="0"]
+
+[node name="13" parent="0/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(1125, 330)
+
+[node name="6" parent="0/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(1035, 330)
+
+[node name="19" parent="0/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(945, 330)
+
+[node name="8" parent="0/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(945, 210)
+
+[node name="27" parent="0/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(1125, 210)
+
+[node name="25" parent="0/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(1035, 210)
+
+[node name="34" parent="0/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(1125, 270)
+
+[node name="33" parent="0/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(1035, 270)
+
+[node name="18" parent="0/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(855, 270)
+
+[node name="23" parent="0/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(855, 210)
+
+[node name="29" parent="0/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(945, 270)
+
+[node name="10" parent="0/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(855, 330)
+
+[node name="24" parent="0/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(1125, 150)
+
+[node name="0" parent="0/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(765, 330)
+
+[node name="22" parent="0/Tile" instance=ExtResource("19_u6p4e")]
+position = Vector2(765, 330)
+
+[node name="26" parent="0/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(765, 210)
+
+[node name="2" parent="0/Tile" instance=ExtResource("19_u6p4e")]
+position = Vector2(765, 150)
+
+[node name="1" parent="0/Tile" instance=ExtResource("20_f4d03")]
+position = Vector2(765, 270)
+
+[node name="4" parent="0/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(765, 150)
+
+[node name="16" parent="0/Tile" instance=ExtResource("22_3ppx2")]
+position = Vector2(765, 150)
+
+[node name="7" parent="0/Tile" instance=ExtResource("20_f4d03")]
+position = Vector2(765, 210)
+
+[node name="30" parent="0/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(765, 150)
+
+[node name="3" parent="0/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(855, 150)
+
+[node name="28" parent="0/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(945, 150)
+
+[node name="35" parent="0/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(1035, 150)
+
+[node name="20" parent="0/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(765, 270)
+
+[node name="21" parent="0/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(855, 150)
+
+[node name="15" parent="0/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(1035, 150)
+
+[node name="31" parent="0/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(945, 150)
+
+[node name="32" parent="0/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(1125, 150)
+
+[node name="37" parent="0/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(1215, 150)
+
+[node name="36" parent="0/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(1215, 150)
+
+[node name="38" parent="0/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(1215, 210)
+
+[node name="39" parent="0/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(1215, 330)
+
+[node name="14" parent="0/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(1215, 270)
+
+[node name="12" parent="0/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(1215, 390)
+
+[node name="43" parent="0/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(1215, 510)
+
+[node name="44" parent="0/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(1215, 450)
+
+[node name="17" parent="0/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(765, 390)
+
+[node name="5" parent="0/Tile" instance=ExtResource("19_u6p4e")]
+position = Vector2(765, 390)
+
+[node name="50" parent="0/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(765, 510)
+
+[node name="49" parent="0/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(765, 450)
+
+[node name="45" parent="0/Tile" instance=ExtResource("25_qfml7")]
+position = Vector2(765, 510)
+
+[node name="51" parent="0/Tile" instance=ExtResource("19_u6p4e")]
+position = Vector2(765, 450)
+
+[node name="46" parent="0/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(855, 510)
+
+[node name="48" parent="0/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(855, 450)
+
+[node name="11" parent="0/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(855, 390)
+
+[node name="9" parent="0/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(945, 390)
+
+[node name="54" parent="0/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(945, 510)
+
+[node name="47" parent="0/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(1035, 390)
+
+[node name="52" parent="0/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(1125, 390)
+
+[node name="41" parent="0/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(1125, 510)
+
+[node name="42" parent="0/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(1125, 450)
+
+[node name="55" parent="0/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(1035, 450)
+
+[node name="53" parent="0/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(1035, 510)
+
+[node name="40" parent="0/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(945, 450)
+
+[node name="57" parent="0/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(1305, 150)
+
+[node name="56" parent="0/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(1305, 150)
+
+[node name="61" parent="0/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(1305, 210)
+
+[node name="60" parent="0/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(1305, 270)
+
+[node name="58" parent="0/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(1305, 510)
+
+[node name="59" parent="0/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(1305, 390)
+
+[node name="63" parent="0/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(1305, 450)
+
+[node name="62" parent="0/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(1305, 330)
+
+[node name="Obj" type="Node2D" parent="0"]
+
+[node name="0" parent="0/Obj" instance=ExtResource("27_wr57n")]
+z_index = 2
+position = Vector2(977, 68)
+
+[node name="1" type="Sprite2D" parent="0/Obj"]
+z_index = 3
+position = Vector2(935, 74)
+texture = ExtResource("28_lw5wo")
+metadata/_edit_lock_ = true
+
+[node name="2" type="Sprite2D" parent="0/Obj"]
+z_index = 3
+position = Vector2(992, 73)
+texture = ExtResource("29_rf2ls")
+metadata/_edit_lock_ = true
+
+[node name="3" type="Sprite2D" parent="0/Obj"]
+position = Vector2(1051, 104)
+texture = ExtResource("30_fca5o")
+metadata/_edit_lock_ = true
+
+[node name="4" type="AnimatedSprite2D" parent="0/Obj"]
+z_index = 4
+position = Vector2(1023, 9)
+sprite_frames = SubResource("SpriteFrames_ma8s7")
+autoplay = "default"
+frame_progress = 0.686068
+metadata/_edit_lock_ = true
+
+[node name="1" type="Node2D" parent="."]
+z_index = 10
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Obj" type="Node2D" parent="1"]
+
+[node name="0" parent="1/Obj" instance=ExtResource("35_tvsfa")]
+z_index = 3
+position = Vector2(975, 116)
+
+[node name="1" parent="1/Obj" instance=ExtResource("36_5wl7l")]
+z_index = 3
+position = Vector2(975, 152)
+
+[node name="2" parent="1/Obj" instance=ExtResource("37_vlh0r")]
+z_index = 3
+position = Vector2(975, 204)
+
+[node name="3" parent="1/Obj" instance=ExtResource("36_5wl7l")]
+z_index = 3
+position = Vector2(975, 256)
+
+[node name="4" parent="1/Obj" instance=ExtResource("37_vlh0r")]
+z_index = 3
+position = Vector2(975, 308)
+
+[node name="5" parent="1/Obj" instance=ExtResource("38_61w52")]
+z_index = 3
+position = Vector2(975, 344)
+
+[node name="6" type="AnimatedSprite2D" parent="1/Obj"]
+z_index = 9
+position = Vector2(328, 440)
+sprite_frames = SubResource("SpriteFrames_awdlq")
+autoplay = "default"
+frame_progress = 0.900419
+metadata/_edit_lock_ = true
+
+[node name="2" type="Node2D" parent="."]
+z_index = 20
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Tile" type="Node2D" parent="2"]
+
+[node name="23" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(855, 510)
+
+[node name="28" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(1125, 510)
+
+[node name="22" parent="2/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(675, 390)
+
+[node name="47" parent="2/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(1125, 390)
+
+[node name="6" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(855, 450)
+
+[node name="7" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(1125, 390)
+
+[node name="4" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(675, 450)
+
+[node name="5" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(765, 450)
+
+[node name="2" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(945, 450)
+
+[node name="37" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(765, 390)
+
+[node name="36" parent="2/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(765, 390)
+
+[node name="46" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(1035, 510)
+
+[node name="20" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(1125, 450)
+
+[node name="14" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(945, 510)
+
+[node name="34" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(495, 450)
+
+[node name="11" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(675, 510)
+
+[node name="10" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(765, 510)
+
+[node name="26" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(585, 450)
+
+[node name="27" parent="2/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(585, 390)
+
+[node name="35" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(1035, 450)
+
+[node name="21" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(675, 390)
+
+[node name="24" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(585, 390)
+
+[node name="38" parent="2/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(495, 390)
+
+[node name="29" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(495, 390)
+
+[node name="16" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(495, 510)
+
+[node name="41" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(585, 510)
+
+[node name="49" parent="2/Tile" instance=ExtResource("19_u6p4e")]
+position = Vector2(495, 390)
+
+[node name="50" parent="2/Tile" instance=ExtResource("45_dp6q5")]
+position = Vector2(495, 390)
+
+[node name="53" parent="2/Tile" instance=ExtResource("22_3ppx2")]
+position = Vector2(405, 450)
+
+[node name="55" parent="2/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(405, 450)
+
+[node name="52" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(405, 510)
+
+[node name="56" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(405, 450)
+
+[node name="54" parent="2/Tile" instance=ExtResource("20_f4d03")]
+position = Vector2(405, 450)
+
+[node name="61" parent="2/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(315, 510)
+
+[node name="62" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(315, 510)
+
+[node name="65" parent="2/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(225, 510)
+
+[node name="69" parent="2/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(45, 510)
+
+[node name="67" parent="2/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(135, 510)
+
+[node name="64" parent="2/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(-45, 510)
+
+[node name="71" parent="2/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(-135, 510)
+
+[node name="73" parent="2/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(-225, 510)
+
+[node name="72" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(-225, 510)
+
+[node name="59" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(225, 510)
+
+[node name="66" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(135, 510)
+
+[node name="68" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(45, 510)
+
+[node name="63" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(-45, 510)
+
+[node name="70" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(-135, 510)
+
+[node name="25" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(-225, 570)
+
+[node name="60" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(135, 570)
+
+[node name="57" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(225, 570)
+
+[node name="78" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(45, 570)
+
+[node name="77" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(-45, 570)
+
+[node name="75" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(-135, 570)
+
+[node name="43" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(-225, 630)
+
+[node name="83" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(-135, 630)
+
+[node name="80" parent="2/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(-135, 690)
+
+[node name="82" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(-45, 630)
+
+[node name="91" parent="2/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(-45, 690)
+
+[node name="85" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(45, 630)
+
+[node name="90" parent="2/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(-225, 690)
+
+[node name="94" parent="2/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(45, 690)
+
+[node name="81" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(135, 630)
+
+[node name="92" parent="2/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(225, 690)
+
+[node name="93" parent="2/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(135, 690)
+
+[node name="84" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(225, 630)
+
+[node name="39" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(585, 570)
+
+[node name="51" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(405, 570)
+
+[node name="58" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(315, 570)
+
+[node name="40" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(495, 570)
+
+[node name="87" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(315, 630)
+
+[node name="95" parent="2/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(315, 690)
+
+[node name="97" parent="2/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(405, 690)
+
+[node name="98" parent="2/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(495, 690)
+
+[node name="101" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(585, 630)
+
+[node name="102" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(495, 630)
+
+[node name="86" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(405, 630)
+
+[node name="96" parent="2/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(585, 690)
+
+[node name="100" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(675, 630)
+
+[node name="15" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(855, 570)
+
+[node name="30" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(765, 570)
+
+[node name="31" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(675, 570)
+
+[node name="3" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(945, 570)
+
+[node name="33" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(1035, 570)
+
+[node name="99" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(1035, 630)
+
+[node name="32" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(1125, 570)
+
+[node name="42" parent="2/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(1125, 690)
+
+[node name="48" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(1125, 630)
+
+[node name="19" parent="2/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(945, 690)
+
+[node name="13" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(765, 630)
+
+[node name="88" parent="2/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(855, 390)
+
+[node name="18" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(855, 390)
+
+[node name="8" parent="2/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(855, 690)
+
+[node name="0" parent="2/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(855, 630)
+
+[node name="9" parent="2/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(765, 690)
+
+[node name="1" parent="2/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(1035, 690)
+
+[node name="12" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(945, 630)
+
+[node name="17" parent="2/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(675, 690)
+
+[node name="79" parent="2/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(945, 390)
+
+[node name="103" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(1035, 390)
+
+[node name="74" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(945, 390)
+
+[node name="76" parent="2/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(1035, 390)
+
+[node name="107" parent="2/Tile" instance=ExtResource("46_7upq1")]
+position = Vector2(1215, 570)
+
+[node name="108" parent="2/Tile" instance=ExtResource("25_qfml7")]
+position = Vector2(1215, 630)
+
+[node name="109" parent="2/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(1215, 570)
+
+[node name="106" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(1215, 510)
+
+[node name="112" parent="2/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(-315, 630)
+
+[node name="113" parent="2/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(-315, 690)
+
+[node name="111" parent="2/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(-315, 510)
+
+[node name="44" parent="2/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(-315, 510)
+
+[node name="45" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(-315, 570)
+
+[node name="114" parent="2/Tile" instance=ExtResource("22_3ppx2")]
+position = Vector2(135, 330)
+
+[node name="115" parent="2/Tile" instance=ExtResource("25_qfml7")]
+position = Vector2(135, 330)
+
+[node name="104" parent="2/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(1215, 390)
+
+[node name="89" parent="2/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(1215, 390)
+
+[node name="118" parent="2/Tile" instance=ExtResource("46_7upq1")]
+position = Vector2(1305, 390)
+
+[node name="116" parent="2/Tile" instance=ExtResource("22_3ppx2")]
+position = Vector2(1305, 390)
+
+[node name="117" parent="2/Tile" instance=ExtResource("46_7upq1")]
+position = Vector2(1305, 450)
+
+[node name="105" parent="2/Tile" instance=ExtResource("25_qfml7")]
+position = Vector2(1305, 510)
+
+[node name="110" parent="2/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(1215, 450)
+
+[node name="Obj" type="Node2D" parent="2"]
+
+[node name="3" parent="2/Obj" instance=ExtResource("47_dle0s")]
+z_index = 4
+position = Vector2(569, 345)
+
+[node name="0" parent="2/Obj" instance=ExtResource("48_o1fnh")]
+z_index = 3
+position = Vector2(605, 317)
+
+[node name="1" parent="2/Obj" instance=ExtResource("49_nima4")]
+z_index = 3
+position = Vector2(728, 313)
+
+[node name="2" parent="2/Obj" instance=ExtResource("50_prspb")]
+z_index = 2
+position = Vector2(579, 299)
+
+[node name="5" parent="2/Obj" instance=ExtResource("49_nima4")]
+z_index = 1
+position = Vector2(-110, 435)
+
+[node name="4" parent="2/Obj" instance=ExtResource("50_prspb")]
+position = Vector2(28, 423)
+
+[node name="6" parent="2/Obj" instance=ExtResource("51_3wxru")]
+z_index = 9
+position = Vector2(-126, 325)
+
+[node name="7" parent="2/Obj" instance=ExtResource("52_yug4y")]
+z_index = 10
+position = Vector2(-97, 467)
+frame_progress = 0.939538
+
+[node name="8" parent="2/Obj" instance=ExtResource("53_ij4xg")]
+z_index = 9
+position = Vector2(221, 439)
+frame_progress = 0.704329
+flip_h = true
+
+[node name="9" parent="2/Obj" instance=ExtResource("54_6e41o")]
+z_index = 9
+position = Vector2(1033, 235)
+frame_progress = 0.11605
+
+[node name="10" parent="2/Obj" instance=ExtResource("53_ij4xg")]
+z_index = 9
+position = Vector2(671, 310)
+flip_h = true
+
+[node name="3" type="Node2D" parent="."]
+z_index = 30
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Obj" type="Node2D" parent="3"]
+
+[node name="0" parent="3/Obj" instance=ExtResource("55_hk4uo")]
+z_index = 3
+position = Vector2(870, 337)
+
+[node name="1" parent="3/Obj" instance=ExtResource("56_has3l")]
+z_index = 9
+position = Vector2(134, 352)
+frame_progress = 0.343801
+
+[node name="4" type="Node2D" parent="."]
+z_index = 40
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Tile" type="Node2D" parent="4"]
+
+[node name="4" parent="4/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(1125, 510)
+
+[node name="3" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(1215, 510)
+
+[node name="11" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(1035, 510)
+
+[node name="1" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(945, 510)
+
+[node name="0" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(945, 510)
+
+[node name="9" parent="4/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(945, 570)
+
+[node name="13" parent="4/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(945, 630)
+
+[node name="17" parent="4/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(945, 690)
+
+[node name="15" parent="4/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(1035, 570)
+
+[node name="25" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(1035, 630)
+
+[node name="24" parent="4/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(1035, 690)
+
+[node name="5" parent="4/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(1125, 510)
+
+[node name="10" parent="4/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(1035, 510)
+
+[node name="26" parent="4/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(1125, 690)
+
+[node name="20" parent="4/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(1125, 570)
+
+[node name="12" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(1215, 570)
+
+[node name="2" parent="4/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(1215, 510)
+
+[node name="22" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(1215, 630)
+
+[node name="28" parent="4/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(1215, 690)
+
+[node name="29" parent="4/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(1125, 630)
+
+[node name="32" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(855, 510)
+
+[node name="33" parent="4/Tile" instance=ExtResource("45_dp6q5")]
+position = Vector2(765, 510)
+
+[node name="31" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(765, 510)
+
+[node name="45" parent="4/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(-135, 630)
+
+[node name="42" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(-225, 630)
+
+[node name="44" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(-45, 630)
+
+[node name="48" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(45, 630)
+
+[node name="37" parent="4/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(135, 630)
+
+[node name="50" parent="4/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(225, 630)
+
+[node name="52" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(315, 630)
+
+[node name="54" parent="4/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(405, 630)
+
+[node name="58" parent="4/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(495, 630)
+
+[node name="56" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(585, 630)
+
+[node name="30" parent="4/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(765, 510)
+
+[node name="16" parent="4/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(855, 570)
+
+[node name="34" parent="4/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(765, 570)
+
+[node name="8" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(855, 510)
+
+[node name="35" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(675, 570)
+
+[node name="7" parent="4/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(675, 570)
+
+[node name="6" parent="4/Tile" instance=ExtResource("45_dp6q5")]
+position = Vector2(675, 570)
+
+[node name="27" parent="4/Tile" instance=ExtResource("19_u6p4e")]
+position = Vector2(765, 510)
+
+[node name="21" parent="4/Tile" instance=ExtResource("20_f4d03")]
+position = Vector2(675, 570)
+
+[node name="41" parent="4/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(-225, 630)
+
+[node name="59" parent="4/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(-225, 690)
+
+[node name="51" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(315, 630)
+
+[node name="49" parent="4/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(225, 630)
+
+[node name="40" parent="4/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(-135, 690)
+
+[node name="46" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(-135, 630)
+
+[node name="43" parent="4/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(-45, 630)
+
+[node name="47" parent="4/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(45, 630)
+
+[node name="39" parent="4/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(135, 690)
+
+[node name="38" parent="4/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(135, 630)
+
+[node name="53" parent="4/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(405, 630)
+
+[node name="57" parent="4/Tile" instance=ExtResource("14_yafdm")]
+position = Vector2(495, 630)
+
+[node name="55" parent="4/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(585, 630)
+
+[node name="23" parent="4/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(855, 690)
+
+[node name="14" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(855, 630)
+
+[node name="19" parent="4/Tile" instance=ExtResource("18_32qtd")]
+position = Vector2(765, 630)
+
+[node name="18" parent="4/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(765, 690)
+
+[node name="36" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(675, 630)
+
+[node name="66" parent="4/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(675, 690)
+
+[node name="67" parent="4/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(315, 690)
+
+[node name="64" parent="4/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(405, 690)
+
+[node name="65" parent="4/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(495, 690)
+
+[node name="60" parent="4/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(-45, 690)
+
+[node name="61" parent="4/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(45, 690)
+
+[node name="62" parent="4/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(225, 690)
+
+[node name="63" parent="4/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(585, 690)
+
+[node name="68" parent="4/Tile" instance=ExtResource("22_3ppx2")]
+position = Vector2(675, 450)
+
+[node name="69" parent="4/Tile" instance=ExtResource("25_qfml7")]
+position = Vector2(675, 450)
+
+[node name="70" parent="4/Tile" instance=ExtResource("22_3ppx2")]
+position = Vector2(585, 450)
+
+[node name="71" parent="4/Tile" instance=ExtResource("25_qfml7")]
+position = Vector2(585, 450)
+
+[node name="72" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(585, 450)
+
+[node name="73" parent="4/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(585, 450)
+
+[node name="76" parent="4/Tile" instance=ExtResource("26_1gslc")]
+position = Vector2(-315, 690)
+
+[node name="74" parent="4/Tile" instance=ExtResource("16_aoidl")]
+position = Vector2(-315, 630)
+
+[node name="75" parent="4/Tile" instance=ExtResource("19_0mkkj")]
+position = Vector2(-315, 630)
+
+[node name="81" parent="4/Tile" instance=ExtResource("15_nxdws")]
+position = Vector2(1305, 570)
+
+[node name="79" parent="4/Tile" instance=ExtResource("24_k1t11")]
+position = Vector2(1305, 690)
+
+[node name="80" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(1305, 630)
+
+[node name="77" parent="4/Tile" instance=ExtResource("21_thk4r")]
+position = Vector2(1305, 510)
+
+[node name="78" parent="4/Tile" instance=ExtResource("17_cdcsp")]
+position = Vector2(1305, 510)
+
+[node name="Obj" type="Node2D" parent="4"]
+
+[node name="ObjGuideTutorialKey2" parent="4/Obj" instance=ExtResource("57_mq75e")]
+z_index = 9
+position = Vector2(827, 441)
+
+[node name="5" type="Node2D" parent="."]
+z_index = 50
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Obj" type="Node2D" parent="5"]
+
+[node name="0" parent="5/Obj" instance=ExtResource("58_g08kl")]
+z_index = 9
+position = Vector2(1071, 585)
+
+[node name="Foothold" type="Node2D" parent="."]
+z_index = 100
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="0" type="Node2D" parent="Foothold"]
+
+[node name="3" type="Node2D" parent="Foothold/0"]
+
+[node name="1" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/1"]
+position = Vector2(726, 330)
+rotation = -1.5708
+shape = ExtResource("59_rnbju")
+one_way_collision = true
+
+[node name="2" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/2"]
+position = Vector2(726, 210)
+rotation = -1.5708
+shape = ExtResource("59_rnbju")
+one_way_collision = true
+
+[node name="3" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/3"]
+position = Vector2(855, 125)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="4" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/4"]
+position = Vector2(765, 125)
+shape = ExtResource("61_tli6d")
+one_way_collision = true
+
+[node name="5" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/5"]
+position = Vector2(726, 450)
+rotation = -1.5708
+shape = ExtResource("59_rnbju")
+one_way_collision = true
+
+[node name="6" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/6"]
+position = Vector2(726, 270)
+rotation = -1.5708
+shape = ExtResource("59_rnbju")
+one_way_collision = true
+
+[node name="7" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/7"]
+position = Vector2(726, 150)
+rotation = -1.5708
+shape = ExtResource("62_7gkbm")
+one_way_collision = true
+
+[node name="8" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/8"]
+position = Vector2(726, 125)
+shape = ExtResource("61_tli6d")
+one_way_collision = true
+
+[node name="9" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/9"]
+position = Vector2(804, 125)
+shape = ExtResource("63_fqjsq")
+one_way_collision = true
+
+[node name="10" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/10"]
+position = Vector2(726, 390)
+rotation = -1.5708
+shape = ExtResource("59_rnbju")
+one_way_collision = true
+
+[node name="11" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/11"]
+position = Vector2(1125, 125)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="12" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/12"]
+position = Vector2(945, 125)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="13" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/13"]
+position = Vector2(1035, 125)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="14" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/14"]
+position = Vector2(1215, 125)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="15" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/15"]
+position = Vector2(726, 510)
+rotation = -1.5708
+shape = ExtResource("59_rnbju")
+one_way_collision = true
+
+[node name="16" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/16"]
+position = Vector2(1305, 125)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="17" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/17"]
+position = Vector2(931, 52)
+shape = ExtResource("64_5npig")
+one_way_collision = true
+
+[node name="18" type="StaticBody2D" parent="Foothold/0/3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/0/3/18"]
+position = Vector2(987.5, 53)
+shape = ExtResource("65_7u814")
+one_way_collision = true
+
+[node name="2" type="Node2D" parent="Foothold"]
+
+[node name="1" type="Node2D" parent="Foothold/2"]
+
+[node name="19" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/19"]
+position = Vector2(675, 365)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="20" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/20"]
+position = Vector2(585, 365)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="21" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/21"]
+position = Vector2(765, 365)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="22" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/22"]
+position = Vector2(495, 365)
+shape = ExtResource("61_tli6d")
+one_way_collision = true
+
+[node name="23" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/23"]
+position = Vector2(-315, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="24" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/24"]
+position = Vector2(1125, 365)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="25" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/25"]
+position = Vector2(456, 390)
+rotation = -1.5708
+shape = ExtResource("62_7gkbm")
+one_way_collision = true
+
+[node name="26" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/26"]
+position = Vector2(456, 365)
+shape = ExtResource("61_tli6d")
+one_way_collision = true
+
+[node name="27" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/27"]
+position = Vector2(534, 365)
+shape = ExtResource("63_fqjsq")
+one_way_collision = true
+
+[node name="28" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/28"]
+position = Vector2(366, 450)
+rotation = -1.5708
+shape = ExtResource("62_7gkbm")
+one_way_collision = true
+
+[node name="29" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/29"]
+position = Vector2(366, 425)
+shape = ExtResource("66_sbb3q")
+one_way_collision = true
+
+[node name="30" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/30"]
+position = Vector2(444, 425)
+shape = ExtResource("67_mobem")
+one_way_collision = true
+
+[node name="31" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/31"]
+position = Vector2(456, 425)
+rotation = -1.5708
+shape = ExtResource("68_2phsx")
+one_way_collision = true
+
+[node name="32" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/32"]
+position = Vector2(315, 485)
+shape = ExtResource("63_fqjsq")
+one_way_collision = true
+
+[node name="33" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/33"]
+position = Vector2(366, 485)
+rotation = -1.5708
+shape = ExtResource("68_2phsx")
+one_way_collision = true
+
+[node name="34" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/34"]
+position = Vector2(-45, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="35" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/35"]
+position = Vector2(225, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="36" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/36"]
+position = Vector2(135, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="37" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/37"]
+position = Vector2(45, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="38" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/38"]
+position = Vector2(-135, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="39" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/39"]
+position = Vector2(-225, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="40" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/40"]
+position = Vector2(1035, 365)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="41" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/41"]
+position = Vector2(945, 365)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="42" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/42"]
+position = Vector2(855, 365)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="43" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/43"]
+position = Vector2(1215, 365)
+shape = ExtResource("63_fqjsq")
+one_way_collision = true
+
+[node name="44" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/44"]
+position = Vector2(1266, 365)
+shape = ExtResource("61_tli6d")
+one_way_collision = true
+
+[node name="45" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/45"]
+position = Vector2(1305, 365)
+shape = ExtResource("61_tli6d")
+one_way_collision = true
+
+[node name="46" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/46"]
+position = Vector2(1344, 365)
+rotation = 1.5708
+shape = ExtResource("62_7gkbm")
+one_way_collision = true
+
+[node name="47" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/47"]
+position = Vector2(1344, 450)
+rotation = 1.5708
+shape = ExtResource("59_rnbju")
+one_way_collision = true
+
+[node name="48" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/48"]
+position = Vector2(1344, 390)
+rotation = 1.5708
+shape = ExtResource("59_rnbju")
+one_way_collision = true
+
+[node name="49" type="StaticBody2D" parent="Foothold/2/1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/1/49"]
+position = Vector2(-141, 469)
+shape = ExtResource("69_rdsi1")
+one_way_collision = true
+
+[node name="11" type="Node2D" parent="Foothold/2"]
+
+[node name="50" type="StaticBody2D" parent="Foothold/2/11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/11/50"]
+position = Vector2(96, 330)
+rotation = -1.5708
+shape = ExtResource("62_7gkbm")
+one_way_collision = true
+
+[node name="51" type="StaticBody2D" parent="Foothold/2/11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/11/51"]
+position = Vector2(96, 305)
+shape = ExtResource("66_sbb3q")
+one_way_collision = true
+
+[node name="52" type="StaticBody2D" parent="Foothold/2/11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/2/11/52"]
+position = Vector2(174, 305)
+rotation = 1.5708
+shape = ExtResource("62_7gkbm")
+one_way_collision = true
+
+[node name="4" type="Node2D" parent="Foothold"]
+
+[node name="0" type="Node2D" parent="Foothold/4"]
+
+[node name="53" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/53"]
+position = Vector2(945, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="54" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/54"]
+position = Vector2(1215, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="55" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/55"]
+position = Vector2(1125, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="56" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/56"]
+position = Vector2(636, 570)
+rotation = -1.5708
+shape = ExtResource("62_7gkbm")
+one_way_collision = true
+
+[node name="57" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/57"]
+position = Vector2(636, 545)
+shape = ExtResource("66_sbb3q")
+one_way_collision = true
+
+[node name="58" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/58"]
+position = Vector2(714, 545)
+shape = ExtResource("67_mobem")
+one_way_collision = true
+
+[node name="59" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/59"]
+position = Vector2(1035, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="60" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/60"]
+position = Vector2(726, 545)
+rotation = -1.5708
+shape = ExtResource("68_2phsx")
+one_way_collision = true
+
+[node name="61" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/61"]
+position = Vector2(765, 485)
+shape = ExtResource("61_tli6d")
+one_way_collision = true
+
+[node name="62" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/62"]
+position = Vector2(855, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="63" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/63"]
+position = Vector2(726, 510)
+rotation = -1.5708
+shape = ExtResource("62_7gkbm")
+one_way_collision = true
+
+[node name="64" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/64"]
+position = Vector2(726, 485)
+shape = ExtResource("61_tli6d")
+one_way_collision = true
+
+[node name="65" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/65"]
+position = Vector2(804, 485)
+shape = ExtResource("63_fqjsq")
+one_way_collision = true
+
+[node name="66" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/66"]
+position = Vector2(135, 605)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="67" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/67"]
+position = Vector2(-225, 605)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="68" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/68"]
+position = Vector2(-45, 605)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="69" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/69"]
+position = Vector2(-135, 605)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="70" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/70"]
+position = Vector2(45, 605)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="71" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/71"]
+position = Vector2(225, 605)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="72" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/72"]
+position = Vector2(315, 605)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="73" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/73"]
+position = Vector2(405, 605)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="74" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/74"]
+position = Vector2(585, 605)
+shape = ExtResource("63_fqjsq")
+one_way_collision = true
+
+[node name="75" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/75"]
+position = Vector2(636, 605)
+rotation = -1.5708
+shape = ExtResource("68_2phsx")
+one_way_collision = true
+
+[node name="76" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/76"]
+position = Vector2(495, 605)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="77" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/77"]
+position = Vector2(-315, 605)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="78" type="StaticBody2D" parent="Foothold/4/0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/0/78"]
+position = Vector2(1305, 485)
+shape = ExtResource("60_h4bxo")
+one_way_collision = true
+
+[node name="4" type="Node2D" parent="Foothold/4"]
+
+[node name="79" type="StaticBody2D" parent="Foothold/4/4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/4/79"]
+position = Vector2(636, 425)
+shape = ExtResource("66_sbb3q")
+one_way_collision = true
+
+[node name="80" type="StaticBody2D" parent="Foothold/4/4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/4/80"]
+position = Vector2(714, 425)
+rotation = 1.5708
+shape = ExtResource("62_7gkbm")
+one_way_collision = true
+
+[node name="81" type="StaticBody2D" parent="Foothold/4/4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/4/81"]
+position = Vector2(546, 450)
+rotation = -1.5708
+shape = ExtResource("62_7gkbm")
+one_way_collision = true
+
+[node name="82" type="StaticBody2D" parent="Foothold/4/4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/4/82"]
+position = Vector2(546, 425)
+shape = ExtResource("66_sbb3q")
+one_way_collision = true
+
+[node name="83" type="StaticBody2D" parent="Foothold/4/4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foothold/4/4/83"]
+position = Vector2(624, 425)
+shape = ExtResource("67_mobem")
+one_way_collision = true
+
+[node name="LadderRope" type="Node2D" parent="."]
+z_index = 100
+
+[node name="1" type="Area2D" parent="LadderRope"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LadderRope/1"]
+position = Vector2(975, 127)
+shape = SubResource("SegmentShape2D_gdwqm")
+
+[node name="Player" parent="." instance=ExtResource("59_1ne2p")]
+z_index = 100
+position = Vector2(957, -99)

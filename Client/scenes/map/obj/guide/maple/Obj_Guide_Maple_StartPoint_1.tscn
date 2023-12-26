@@ -1,0 +1,89 @@
+[gd_scene load_steps=20 format=3 uid="uid://casgkugsosnbv"]
+
+[ext_resource type="Texture2D" uid="uid://cijxbd6m7bkbc" path="res://assets/Map/Obj/guide/maple/startPoint.1.0.png" id="1_f8ss0"]
+[ext_resource type="Texture2D" uid="uid://bht3spb2bcys3" path="res://assets/Map/Obj/guide/maple/startPoint.1.1.png" id="2_g8wlx"]
+[ext_resource type="Texture2D" uid="uid://rogot12i61s4" path="res://assets/Map/Obj/guide/maple/startPoint.1.2.png" id="3_y7uk5"]
+[ext_resource type="Texture2D" uid="uid://crmr8j103hnnr" path="res://assets/Map/Obj/guide/maple/startPoint.1.3.png" id="4_0qior"]
+[ext_resource type="Texture2D" uid="uid://befnrddjptk5f" path="res://assets/Map/Obj/guide/maple/startPoint.1.4.png" id="5_5ys13"]
+[ext_resource type="Texture2D" uid="uid://c1tw72q8rti34" path="res://assets/Map/Obj/guide/maple/startPoint.1.5.png" id="6_r4iy1"]
+[ext_resource type="Texture2D" uid="uid://dbxfjq2a1t46r" path="res://assets/Map/Obj/guide/maple/startPoint.1.6.png" id="7_uv3yr"]
+[ext_resource type="Texture2D" uid="uid://xi2l8p7gayj" path="res://assets/Map/Obj/guide/maple/startPoint.1.7.png" id="8_m6j2g"]
+[ext_resource type="Texture2D" uid="uid://c6tncg8f11t1w" path="res://assets/Map/Obj/guide/maple/startPoint.1.8.png" id="9_103io"]
+[ext_resource type="Texture2D" uid="uid://bwro4ytojtxkl" path="res://assets/Map/Obj/guide/maple/startPoint.1.9.png" id="10_3c480"]
+[ext_resource type="Texture2D" uid="uid://j28w5y3sqsbo" path="res://assets/Map/Obj/guide/maple/startPoint.1.10.png" id="11_17klf"]
+[ext_resource type="Texture2D" uid="uid://b5ot1vwkapgqi" path="res://assets/Map/Obj/guide/maple/startPoint.1.11.png" id="12_08lab"]
+[ext_resource type="Texture2D" uid="uid://dbnld5g7nomgx" path="res://assets/Map/Obj/guide/maple/startPoint.1.12.png" id="13_7xu3v"]
+[ext_resource type="Texture2D" uid="uid://cwq8d7d83gkoa" path="res://assets/Map/Obj/guide/maple/startPoint.1.13.png" id="14_gct12"]
+[ext_resource type="Texture2D" uid="uid://dvh0ie4wsjj0d" path="res://assets/Map/Obj/guide/maple/startPoint.1.14.png" id="15_xcsg0"]
+[ext_resource type="Texture2D" uid="uid://ritwlorllw37" path="res://assets/Map/Obj/guide/maple/startPoint.1.15.png" id="16_hwovy"]
+[ext_resource type="Texture2D" uid="uid://mu32dnr3wryt" path="res://assets/Map/Obj/guide/maple/startPoint.1.16.png" id="17_3iu6q"]
+[ext_resource type="Texture2D" uid="uid://dt7mdskuhgura" path="res://assets/Map/Obj/guide/maple/startPoint.1.17.png" id="18_vbhuy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a0fr0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_f8ss0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_g8wlx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y7uk5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0qior")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5ys13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_r4iy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_uv3yr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m6j2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_103io")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3c480")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_17klf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_08lab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_7xu3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gct12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xcsg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hwovy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3iu6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_vbhuy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="ObjGuideMapleStartPoint1" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_a0fr0")
+autoplay = "default"
+frame_progress = 0.651893
+offset = Vector2(0, -44)
+metadata/_edit_lock_ = true

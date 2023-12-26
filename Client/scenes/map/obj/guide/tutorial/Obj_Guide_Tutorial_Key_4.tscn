@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://b2irpdalyqxp0"]
+
+[ext_resource type="Texture2D" uid="uid://brq76t6bysa1g" path="res://assets/Map/Obj/guide/tutorial/key.4.0.png" id="1_6skod"]
+[ext_resource type="Texture2D" uid="uid://b3p6ojfd7ylp5" path="res://assets/Map/Obj/guide/tutorial/key.4.1.png" id="2_7nuef"]
+[ext_resource type="Texture2D" uid="uid://376buf5yvll6" path="res://assets/Map/Obj/guide/tutorial/key.4.2.png" id="3_e72nw"]
+[ext_resource type="Texture2D" uid="uid://7tu6kb6lqpk1" path="res://assets/Map/Obj/guide/tutorial/key.4.3.png" id="4_dkovj"]
+[ext_resource type="Texture2D" uid="uid://co5uplro8ibn0" path="res://assets/Map/Obj/guide/tutorial/key.4.4.png" id="5_8lglp"]
+[ext_resource type="Texture2D" uid="uid://r0xaoqdx5pup" path="res://assets/Map/Obj/guide/tutorial/key.4.5.png" id="6_whtb8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5fubf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6skod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7nuef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_e72nw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dkovj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8lglp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_whtb8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="ObjGuideTutorialKey4" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_5fubf")
+autoplay = "default"
+offset = Vector2(5.5, -44.5)
+metadata/_edit_lock_ = true

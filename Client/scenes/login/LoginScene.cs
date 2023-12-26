@@ -116,6 +116,11 @@ public partial class LoginScene : Node2D
         _animationPlayer.Play("charSelectToNewChar");
     }
 
+    private void OnCharacterSelectBtnPressed()
+    {
+        GetTree().ChangeSceneToPacked(GD.Load<PackedScene>("res://scenes/gui/GameGUI.tscn"));
+    }
+
     #endregion
 
     #region 世界选择界面信号处理

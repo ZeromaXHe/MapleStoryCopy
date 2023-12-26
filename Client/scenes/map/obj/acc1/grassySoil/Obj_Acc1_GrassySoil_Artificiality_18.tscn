@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://24ekabtsldec"]
+
+[ext_resource type="Texture2D" uid="uid://05eq5ijojc4f" path="res://assets/Map/Obj/acc1/grassySoil/artificiality.18.0.png" id="1_jct3m"]
+
+[node name="ObjAcc1GrassySoilArtificiality18" type="Sprite2D"]
+texture = ExtResource("1_jct3m")
+metadata/_edit_lock_ = true

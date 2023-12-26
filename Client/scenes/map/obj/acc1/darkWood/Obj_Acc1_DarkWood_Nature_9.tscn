@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cedr0lurs055s"]
+
+[ext_resource type="Texture2D" uid="uid://cj2rmkmuch0l4" path="res://assets/Map/Obj/acc1/darkWood/nature.9.0.png" id="1_fh7qh"]
+
+[node name="ObjAcc1DarkWoodNature9" type="Sprite2D"]
+texture = ExtResource("1_fh7qh")
+offset = Vector2(0, 0.5)
+metadata/_edit_lock_ = true

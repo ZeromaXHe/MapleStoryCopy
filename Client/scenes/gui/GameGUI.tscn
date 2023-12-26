@@ -1,4 +1,44 @@
-[gd_scene format=3 uid="uid://c7xugy85rdma2"]
+[gd_scene load_steps=40 format=3 uid="uid://c7xugy85rdma2"]
+
+[ext_resource type="PackedScene" uid="uid://bbja30ux78c3i" path="res://scenes/map/map/map0/Map000010000.tscn" id="1_6tqm3"]
+[ext_resource type="Texture2D" uid="uid://h283cd3nqete" path="res://assets/UI/StatusBar/base/backgrnd.png" id="1_fh3i3"]
+[ext_resource type="Texture2D" uid="uid://bh7n6fjw3wfl2" path="res://assets/UI/StatusBar/base/backgrnd2.png" id="2_feth8"]
+[ext_resource type="Texture2D" uid="uid://c7il6j2itat2r" path="res://assets/UI/StatusBar/base/quickSlot.png" id="3_1padk"]
+[ext_resource type="Texture2D" uid="uid://bgxmindxf8ppp" path="res://assets/UI/StatusBar/gauge/gauge.bar.png" id="4_5gj7m"]
+[ext_resource type="Texture2D" uid="uid://cyltbtwudcjgg" path="res://assets/UI/StatusBar/gauge/graduation.png" id="5_datl4"]
+[ext_resource type="PackedScene" uid="uid://44tsfky7xujk" path="res://scenes/components/AudioTextureButton.tscn" id="6_k6r62"]
+[ext_resource type="Texture2D" uid="uid://butvdtstsa16u" path="res://assets/UI/StatusBar/BtShop.normal.0.png" id="7_8gh4b"]
+[ext_resource type="Texture2D" uid="uid://l1tc6gi5x2wd" path="res://assets/UI/StatusBar/BtShop.pressed.0.png" id="8_2nig2"]
+[ext_resource type="Texture2D" uid="uid://d4e7jjnl76ala" path="res://assets/UI/StatusBar/BtShop.mouseOver.0.png" id="9_g14n3"]
+[ext_resource type="Texture2D" uid="uid://cjlijmj5f856n" path="res://assets/UI/StatusBar/BtMenu.normal.0.png" id="10_sni11"]
+[ext_resource type="Texture2D" uid="uid://ch8cbjo68m85y" path="res://assets/UI/StatusBar/BtMenu.pressed.0.png" id="11_yiocy"]
+[ext_resource type="Texture2D" uid="uid://bx803qg08kvft" path="res://assets/UI/StatusBar/BtMenu.mouseOver.0.png" id="12_dplu7"]
+[ext_resource type="Texture2D" uid="uid://bv8wxvdnk6sfd" path="res://assets/UI/StatusBar/BtShort.normal.0.png" id="13_qg10o"]
+[ext_resource type="Texture2D" uid="uid://cq5iosnu2x7aa" path="res://assets/UI/StatusBar/BtShort.pressed.0.png" id="14_8nfy1"]
+[ext_resource type="Texture2D" uid="uid://bmyupj02lygm8" path="res://assets/UI/StatusBar/BtShort.mouseOver.0.png" id="15_qa6dc"]
+[ext_resource type="Texture2D" uid="uid://ccc14f2u6mhgh" path="res://assets/UI/StatusBar/EquipKey.normal.0.png" id="16_486ro"]
+[ext_resource type="Texture2D" uid="uid://chkuksk7gddy0" path="res://assets/UI/StatusBar/EquipKey.pressed.0.png" id="17_rlg02"]
+[ext_resource type="Texture2D" uid="uid://dr5n3ahth7fdo" path="res://assets/UI/StatusBar/EquipKey.mouseOver.0.png" id="18_k3bsh"]
+[ext_resource type="Texture2D" uid="uid://cl67hoadh557t" path="res://assets/UI/StatusBar/InvenKey.normal.0.png" id="19_j806m"]
+[ext_resource type="Texture2D" uid="uid://c5mku5lweguec" path="res://assets/UI/StatusBar/InvenKey.pressed.0.png" id="20_boi6j"]
+[ext_resource type="Texture2D" uid="uid://uy4awj5stc3n" path="res://assets/UI/StatusBar/InvenKey.mouseOver.0.png" id="21_asffo"]
+[ext_resource type="Texture2D" uid="uid://d0w450lyb3mpy" path="res://assets/UI/StatusBar/StatKey.normal.0.png" id="22_ehy4i"]
+[ext_resource type="Texture2D" uid="uid://br75xh47ua5r7" path="res://assets/UI/StatusBar/StatKey.pressed.0.png" id="23_d516u"]
+[ext_resource type="Texture2D" uid="uid://c5jc35jmfa1je" path="res://assets/UI/StatusBar/StatKey.mouseOver.0.png" id="24_menqx"]
+[ext_resource type="Texture2D" uid="uid://brcamwpfpaxgf" path="res://assets/UI/StatusBar/SkillKey.normal.0.png" id="25_lgcdq"]
+[ext_resource type="Texture2D" uid="uid://bgk0k62b7yqk5" path="res://assets/UI/StatusBar/SkillKey.pressed.0.png" id="26_lbtob"]
+[ext_resource type="Texture2D" uid="uid://bwtpgete2rq1h" path="res://assets/UI/StatusBar/SkillKey.mouseOver.0.png" id="27_k0tfu"]
+[ext_resource type="Texture2D" uid="uid://f242k878u3ws" path="res://assets/UI/StatusBar/KeySet.normal.0.png" id="28_15d7l"]
+[ext_resource type="Texture2D" uid="uid://cdjnte200l157" path="res://assets/UI/StatusBar/KeySet.pressed.0.png" id="29_vvctt"]
+[ext_resource type="Texture2D" uid="uid://bvimc1jbjpy65" path="res://assets/UI/StatusBar/KeySet.mouseOver.0.png" id="30_487pu"]
+[ext_resource type="PackedScene" uid="uid://dt6qefkckc4k1" path="res://scenes/cursors/Cursor.tscn" id="32_n2wrt"]
+[ext_resource type="Texture2D" uid="uid://cm387cbnwcbcq" path="res://assets/UI/UIWindow/MiniMap/MaxMap.NinePatch.png" id="32_u0c4m"]
+[ext_resource type="Texture2D" uid="uid://dmblgxv2xg03r" path="res://assets/Map/Map/Map0/000010000.img.miniMap.canvas.png" id="33_hqj00"]
+[ext_resource type="Texture2D" uid="uid://cvlotgi813ird" path="res://assets/UI/UIWindow/MiniMap/title.png" id="34_j14s2"]
+[ext_resource type="Texture2D" uid="uid://cy8hkypaw652u" path="res://assets/UI/UIWindow/MiniMap/BtMap.normal.0.png" id="35_8vghe"]
+[ext_resource type="Texture2D" uid="uid://c2jlsxs0wbaqs" path="res://assets/UI/UIWindow/MiniMap/BtMap.pressed.0.png" id="36_yjwk7"]
+[ext_resource type="Texture2D" uid="uid://dsjxqq2yskn7c" path="res://assets/UI/UIWindow/MiniMap/BtMap.mouseOver.0.png" id="37_rrco3"]
+[ext_resource type="Texture2D" uid="uid://ds8am15bf3nmh" path="res://assets/UI/UIWindow/MiniMap/BtMap.disabled.0.png" id="38_eavx6"]
 
 [node name="GameGUI" type="Control"]
 layout_mode = 3
@@ -7,3 +47,186 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1280, 720)
+render_target_update_mode = 4
+
+[node name="Map000010000" parent="SubViewportContainer/SubViewport" instance=ExtResource("1_6tqm3")]
+
+[node name="StatusBar" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1280, 71)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_fh3i3")
+metadata/_edit_lock_ = true
+
+[node name="Level" type="TextureRect" parent="StatusBar"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -71.0
+offset_right = 570.0
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture = ExtResource("2_feth8")
+metadata/_edit_lock_ = true
+
+[node name="QuickSlot" type="TextureRect" parent="StatusBar"]
+layout_mode = 0
+offset_left = 739.0
+offset_top = -8.0
+offset_right = 890.0
+offset_bottom = 72.0
+texture = ExtResource("3_1padk")
+metadata/_edit_lock_ = true
+
+[node name="GaugeBar" type="TextureRect" parent="StatusBar"]
+layout_mode = 0
+offset_left = 213.0
+offset_top = 31.0
+offset_right = 553.0
+offset_bottom = 71.0
+texture = ExtResource("4_5gj7m")
+metadata/_edit_lock_ = true
+
+[node name="Graduation" type="TextureRect" parent="StatusBar/GaugeBar"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("5_datl4")
+metadata/_edit_lock_ = true
+
+[node name="BigBtnHBox" type="HBoxContainer" parent="StatusBar"]
+layout_mode = 0
+offset_left = 570.0
+offset_top = 37.0
+offset_right = 734.0
+offset_bottom = 71.0
+theme_override_constants/separation = 1
+metadata/_edit_lock_ = true
+
+[node name="ShopBtn" parent="StatusBar/BigBtnHBox" instance=ExtResource("6_k6r62")]
+layout_mode = 2
+texture_normal = ExtResource("7_8gh4b")
+texture_pressed = ExtResource("8_2nig2")
+texture_hover = ExtResource("9_g14n3")
+
+[node name="MenuBtn" parent="StatusBar/BigBtnHBox" instance=ExtResource("6_k6r62")]
+layout_mode = 2
+texture_normal = ExtResource("10_sni11")
+texture_pressed = ExtResource("11_yiocy")
+texture_hover = ExtResource("12_dplu7")
+
+[node name="ShortBtn" parent="StatusBar/BigBtnHBox" instance=ExtResource("6_k6r62")]
+layout_mode = 2
+texture_normal = ExtResource("13_qg10o")
+texture_pressed = ExtResource("14_8nfy1")
+texture_hover = ExtResource("15_qa6dc")
+
+[node name="SmallBtnHBox" type="HBoxContainer" parent="StatusBar"]
+layout_mode = 0
+offset_left = 570.0
+offset_top = 8.0
+offset_right = 598.0
+offset_bottom = 28.0
+theme_override_constants/separation = 1
+metadata/_edit_lock_ = true
+
+[node name="EquipBtn" parent="StatusBar/SmallBtnHBox" instance=ExtResource("6_k6r62")]
+layout_mode = 2
+texture_normal = ExtResource("16_486ro")
+texture_pressed = ExtResource("17_rlg02")
+texture_hover = ExtResource("18_k3bsh")
+
+[node name="InvenBtn" parent="StatusBar/SmallBtnHBox" instance=ExtResource("6_k6r62")]
+layout_mode = 2
+texture_normal = ExtResource("19_j806m")
+texture_pressed = ExtResource("20_boi6j")
+texture_hover = ExtResource("21_asffo")
+
+[node name="StatBtn" parent="StatusBar/SmallBtnHBox" instance=ExtResource("6_k6r62")]
+layout_mode = 2
+texture_normal = ExtResource("22_ehy4i")
+texture_pressed = ExtResource("23_d516u")
+texture_hover = ExtResource("24_menqx")
+
+[node name="SkillBtn" parent="StatusBar/SmallBtnHBox" instance=ExtResource("6_k6r62")]
+layout_mode = 2
+texture_normal = ExtResource("25_lgcdq")
+texture_pressed = ExtResource("26_lbtob")
+texture_hover = ExtResource("27_k0tfu")
+
+[node name="KeySetBtn" parent="StatusBar/SmallBtnHBox" instance=ExtResource("6_k6r62")]
+layout_mode = 2
+texture_normal = ExtResource("28_15d7l")
+texture_pressed = ExtResource("29_vvctt")
+texture_hover = ExtResource("30_487pu")
+
+[node name="MiniMap2" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 126.0
+offset_bottom = 146.0
+
+[node name="MiniMap" type="NinePatchRect" parent="MiniMap2"]
+layout_mode = 2
+texture = ExtResource("32_u0c4m")
+patch_margin_left = 6
+patch_margin_top = 72
+patch_margin_right = 6
+patch_margin_bottom = 15
+
+[node name="CanvasMargin" type="MarginContainer" parent="MiniMap2"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 72
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 15
+
+[node name="Canvas" type="TextureRect" parent="MiniMap2/CanvasMargin"]
+layout_mode = 2
+texture = ExtResource("33_hqj00")
+stretch_mode = 2
+
+[node name="TitleMargin" type="MarginContainer" parent="MiniMap2"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MiniMap2/TitleMargin"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Title" type="TextureRect" parent="MiniMap2/TitleMargin/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("34_j14s2")
+
+[node name="WorldMapBtn" parent="MiniMap2/TitleMargin/HBoxContainer" instance=ExtResource("6_k6r62")]
+layout_mode = 2
+size_flags_horizontal = 10
+texture_normal = ExtResource("35_8vghe")
+texture_pressed = ExtResource("36_yjwk7")
+texture_hover = ExtResource("37_rrco3")
+texture_disabled = ExtResource("38_eavx6")
+
+[node name="Cursor" parent="." instance=ExtResource("32_n2wrt")]

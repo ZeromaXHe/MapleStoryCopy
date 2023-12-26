@@ -1,0 +1,4 @@
+[gd_resource type="SegmentShape2D" format=3 uid="uid://rbu2e6xw8l0u"]
+
+[resource]
+b = Vector2(35, 0)

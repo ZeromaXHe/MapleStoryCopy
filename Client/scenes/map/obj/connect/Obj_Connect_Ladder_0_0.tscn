@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://i4enxuxsobdn"]
+
+[ext_resource type="Texture2D" uid="uid://f1vapu3dvdci" path="res://assets/Map/Obj/connect/ladder.0.0.0.png" id="1_l46i3"]
+
+[node name="ObjConnectLadder00" type="Sprite2D"]
+texture = ExtResource("1_l46i3")
+offset = Vector2(0, 0.5)
+metadata/_edit_lock_ = true

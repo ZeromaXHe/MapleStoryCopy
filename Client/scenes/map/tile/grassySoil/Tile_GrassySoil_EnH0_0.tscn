@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx42ktejecmim"]
+
+[ext_resource type="Texture2D" uid="uid://c45wrjwy43685" path="res://assets/Map/Tile/grassySoil/enH0.0.png" id="1_smjf2"]
+
+[node name="TileGrassySoilEnH00" type="Sprite2D"]
+z_index = -3
+texture = ExtResource("1_smjf2")
+offset = Vector2(45, -19)
+metadata/_edit_lock_ = true
