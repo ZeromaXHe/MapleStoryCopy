@@ -199,7 +199,7 @@ metadata/_edit_lock_ = true
 [node name="ParallaxLayerAdapter1" parent="Back" instance=ExtResource("2_vhhe3")]
 position = Vector2(100, -203)
 motion_scale = Vector2(0.333, 0.2)
-motion_offset = Vector2(-130.067, 0)
+motion_offset = Vector2(-573.732, 0)
 motion_mirroring = Vector2(1024, 0)
 Type = 4
 Rx = -5
@@ -928,7 +928,7 @@ position = Vector2(-126, 325)
 [node name="7" parent="2/Obj" instance=ExtResource("52_yug4y")]
 z_index = 10
 position = Vector2(-97, 467)
-frame_progress = 0.939538
+frame_progress = 0.0745101
 
 [node name="8" parent="2/Obj" instance=ExtResource("53_ij4xg")]
 z_index = 9
@@ -1867,4 +1867,4 @@ shape = SubResource("SegmentShape2D_gdwqm")
 
 [node name="Player" parent="." instance=ExtResource("59_1ne2p")]
 z_index = 100
-position = Vector2(957, -99)
+position = Vector2(-91, 414)
