@@ -199,7 +199,7 @@ metadata/_edit_lock_ = true
 [node name="ParallaxLayerAdapter1" parent="Back" instance=ExtResource("2_vhhe3")]
 position = Vector2(100, -203)
 motion_scale = Vector2(0.333, 0.2)
-motion_offset = Vector2(-573.732, 0)
+motion_offset = Vector2(-343.628, 0)
 motion_mirroring = Vector2(1024, 0)
 Type = 4
 Rx = -5
@@ -1247,6 +1247,7 @@ metadata/_edit_group_ = true
 position = Vector2(726, 330)
 rotation = -1.5708
 shape = ExtResource("59_rnbju")
+disabled = true
 one_way_collision = true
 
 [node name="2" type="StaticBody2D" parent="Foothold/0/3"]
@@ -1255,6 +1256,7 @@ one_way_collision = true
 position = Vector2(726, 210)
 rotation = -1.5708
 shape = ExtResource("59_rnbju")
+disabled = true
 one_way_collision = true
 
 [node name="3" type="StaticBody2D" parent="Foothold/0/3"]
@@ -1277,6 +1279,7 @@ one_way_collision = true
 position = Vector2(726, 450)
 rotation = -1.5708
 shape = ExtResource("59_rnbju")
+disabled = true
 one_way_collision = true
 
 [node name="6" type="StaticBody2D" parent="Foothold/0/3"]
@@ -1285,6 +1288,7 @@ one_way_collision = true
 position = Vector2(726, 270)
 rotation = -1.5708
 shape = ExtResource("59_rnbju")
+disabled = true
 one_way_collision = true
 
 [node name="7" type="StaticBody2D" parent="Foothold/0/3"]
@@ -1315,6 +1319,7 @@ one_way_collision = true
 position = Vector2(726, 390)
 rotation = -1.5708
 shape = ExtResource("59_rnbju")
+disabled = true
 one_way_collision = true
 
 [node name="11" type="StaticBody2D" parent="Foothold/0/3"]
@@ -1351,6 +1356,7 @@ one_way_collision = true
 position = Vector2(726, 510)
 rotation = -1.5708
 shape = ExtResource("59_rnbju")
+disabled = true
 one_way_collision = true
 
 [node name="16" type="StaticBody2D" parent="Foothold/0/3"]
@@ -1577,6 +1583,7 @@ one_way_collision = true
 position = Vector2(1344, 365)
 rotation = 1.5708
 shape = ExtResource("62_7gkbm")
+disabled = true
 one_way_collision = true
 
 [node name="47" type="StaticBody2D" parent="Foothold/2/1"]
@@ -1585,6 +1592,7 @@ one_way_collision = true
 position = Vector2(1344, 450)
 rotation = 1.5708
 shape = ExtResource("59_rnbju")
+disabled = true
 one_way_collision = true
 
 [node name="48" type="StaticBody2D" parent="Foothold/2/1"]
@@ -1593,6 +1601,7 @@ one_way_collision = true
 position = Vector2(1344, 390)
 rotation = 1.5708
 shape = ExtResource("59_rnbju")
+disabled = true
 one_way_collision = true
 
 [node name="49" type="StaticBody2D" parent="Foothold/2/1"]
@@ -1832,6 +1841,7 @@ one_way_collision = true
 position = Vector2(714, 425)
 rotation = 1.5708
 shape = ExtResource("62_7gkbm")
+disabled = true
 one_way_collision = true
 
 [node name="81" type="StaticBody2D" parent="Foothold/4/4"]
@@ -1840,6 +1850,7 @@ one_way_collision = true
 position = Vector2(546, 450)
 rotation = -1.5708
 shape = ExtResource("62_7gkbm")
+disabled = true
 one_way_collision = true
 
 [node name="82" type="StaticBody2D" parent="Foothold/4/4"]

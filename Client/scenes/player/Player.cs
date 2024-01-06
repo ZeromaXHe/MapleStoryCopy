@@ -59,10 +59,11 @@ public partial class Player : CharacterBody2D
     }
 
     // @onready
-    private Sprite2D _body;
+    private CollisionShape2D _feetCollisionShape;
+    private Area2D _landDetectArea;
     private CollisionShape2D _standCollisionShape;
     private CollisionShape2D _proneCollisionShape;
-    private CollisionShape2D _feetCollisionShape;
+    private Sprite2D _body;
     private AnimationPlayer _bodyAnim;
     private AnimationPlayer _handWeaponAnim;
     private AnimationPlayer _weaponAnim;
@@ -73,10 +74,11 @@ public partial class Player : CharacterBody2D
     public override void _Ready()
     {
         // 初始化 on-ready 变量
-        _body = GetNode<Sprite2D>("Body");
+        _feetCollisionShape = GetNode<CollisionShape2D>("FeetCollisionShape2D");
+        _landDetectArea = GetNode<Area2D>("LandDetectArea2D");
         _standCollisionShape = GetNode<CollisionShape2D>("StandArea2D/CollisionShape2D");
         _proneCollisionShape = GetNode<CollisionShape2D>("ProneArea2D/CollisionShape2D");
-        _feetCollisionShape = GetNode<CollisionShape2D>("FeetCollisionShape2D");
+        _body = GetNode<Sprite2D>("Body");
         _bodyAnim = GetNode<AnimationPlayer>("Body/BodyAnim");
         _handWeaponAnim = GetNode<AnimationPlayer>("Body/Navel/Arm/Hand/HandWeapon/HandWeaponAnim");
         _weaponAnim = GetNode<AnimationPlayer>("Body/Navel/Weapon/WeaponAnim");
@@ -85,19 +87,24 @@ public partial class Player : CharacterBody2D
         _shoesAnim = GetNode<AnimationPlayer>("Body/Navel/Shoes/ShoesAnim");
 
         // 默认站立碰撞体
+        _feetCollisionShape.Disabled = false;
+        // TODO:暂时还没写伤害逻辑，所以都禁用
         _standCollisionShape.Disabled = true;
         _proneCollisionShape.Disabled = true;
-        _feetCollisionShape.Disabled = false;
     }
 
     public override void _PhysicsProcess(double delta)
     {
         // TODO: 后续需要用状态模式重构
         Vector2 velocity = Velocity;
-
-        // 重力影响
-        if (!IsOnFloor())
+        
+        if (IsOnFloor())
         {
+            // GetSlideCollision().GetColliderShape() as CollisionShape2D
+        }
+        else
+        {
+            // 重力影响
             velocity.Y += _gravity * (float)delta;
             Status = StatusEnum.Jump;
         }
@@ -122,7 +129,10 @@ public partial class Player : CharacterBody2D
 
                 // 向下跳跃
                 if (Input.IsActionJustPressed("jump"))
-                    velocity.Y = -JumpVelocity;
+                {
+                    Position += Vector2.Down;
+                    // velocity.Y = -JumpVelocity;
+                }
             }
         }
         else
@@ -147,12 +157,16 @@ public partial class Player : CharacterBody2D
                     _body.Scale = new Vector2(-1, 1);
                     _standCollisionShape.Position =
                         new Vector2(Math.Abs(_standCollisionShape.Position.X), _standCollisionShape.Position.Y);
+                    _proneCollisionShape.Position =
+                        new Vector2(Math.Abs(_proneCollisionShape.Position.X), _proneCollisionShape.Position.Y);
                 }
                 else if (direction < 0 && Math.Abs(_body.Scale.X - -1) < 0.01)
                 {
                     _body.Scale = Vector2.One;
                     _standCollisionShape.Position =
                         new Vector2(-Math.Abs(_standCollisionShape.Position.X), _standCollisionShape.Position.Y);
+                    _proneCollisionShape.Position =
+                        new Vector2(-Math.Abs(_proneCollisionShape.Position.X), _proneCollisionShape.Position.Y);
                 }
             }
             else
